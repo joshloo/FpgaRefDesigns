@@ -1,0 +1,172 @@
+
+fsm_encoding {5315884158814} sequential
+
+fsm_state_encoding {5315884158814} STATE_IDLE {00}
+
+fsm_state_encoding {5315884158814} STATE_DATA {01}
+
+fsm_state_encoding {5315884158814} STATE_RESP {10}
+
+fsm_registers {5315884158814} {state_reg[1]}  {state_reg[0]} 
+
+fsm_encoding {53961496113} sequential
+
+fsm_state_encoding {53961496113} STATE_IDLE {0}
+
+fsm_state_encoding {53961496113} STATE_DATA {1}
+
+fsm_registers {53961496113} {state_reg[0]} 
+
+fsm_encoding {5515884158812} sequential
+
+fsm_state_encoding {5515884158812} STATE_IDLE {00}
+
+fsm_state_encoding {5515884158812} STATE_DATA {01}
+
+fsm_state_encoding {5515884158812} STATE_RESP {10}
+
+fsm_registers {5515884158812} {state_reg[1]}  {state_reg[0]} 
+
+fsm_encoding {55961496111} sequential
+
+fsm_state_encoding {55961496111} STATE_IDLE {0}
+
+fsm_state_encoding {55961496111} STATE_DATA {1}
+
+fsm_registers {55961496111} {state_reg[0]} 
+
+fsm_encoding {5113694136910} sequential
+
+fsm_state_encoding {5113694136910} STATE_IDLE {0}
+
+fsm_state_encoding {5113694136910} STATE_DECODE {1}
+
+fsm_registers {5113694136910} {state_reg[0]} 
+
+fsm_encoding {511369413699} sequential
+
+fsm_state_encoding {511369413699} STATE_IDLE {0}
+
+fsm_state_encoding {511369413699} STATE_DECODE {1}
+
+fsm_registers {511369413699} {state_reg[0]} 
+
+fsm_encoding {50107004107005} onehot
+
+fsm_state_encoding {50107004107005} 000 {00001}
+
+fsm_state_encoding {50107004107005} 001 {00010}
+
+fsm_state_encoding {50107004107005} 010 {00100}
+
+fsm_state_encoding {50107004107005} 011 {01000}
+
+fsm_state_encoding {50107004107005} 100 {10000}
+
+fsm_registers {50107004107005} {switch_Fetcher_l583[4]}  {switch_Fetcher_l583[3]}  {switch_Fetcher_l583[2]}  {switch_Fetcher_l583[1]}  {switch_Fetcher_l583[0]} 
+
+fsm_encoding {50107004107006} sequential
+
+fsm_state_encoding {50107004107006} execute_PmpTORPlugin_fsm_enumDef_BOOT {00}
+
+fsm_state_encoding {50107004107006} execute_PmpTORPlugin_fsm_enumDef_stateIdle {01}
+
+fsm_state_encoding {50107004107006} execute_PmpTORPlugin_fsm_enumDef_stateWrite {10}
+
+fsm_registers {50107004107006} {execute_PmpTORPlugin_fsm_stateReg[1]}  {execute_PmpTORPlugin_fsm_stateReg[0]} 
+
+fsm_encoding {50154284154288} onehot
+
+fsm_state_encoding {50154284154288} 000 {00000001}
+
+fsm_state_encoding {50154284154288} 001 {00000010}
+
+fsm_state_encoding {50154284154288} 010 {00000100}
+
+fsm_state_encoding {50154284154288} 011 {00001000}
+
+fsm_state_encoding {50154284154288} 100 {00010000}
+
+fsm_state_encoding {50154284154288} 101 {00100000}
+
+fsm_state_encoding {50154284154288} 110 {01000000}
+
+fsm_state_encoding {50154284154288} 111 {10000000}
+
+fsm_registers {50154284154288} {src_rqs_readyÛ0Ý[7]}  {src_rqs_readyÛ0Ý[6]}  {src_rqs_readyÛ0Ý[5]}  {src_rqs_readyÛ0Ý[4]}  {src_rqs_readyÛ0Ý[3]}  {src_rqs_readyÛ0Ý[2]}  {src_rqs_readyÛ0Ý[1]}  {src_rqs_readyÛ0Ý[0]} 
+
+fsm_encoding {50178634178637} sequential
+
+fsm_state_encoding {50178634178637} 00 {00}
+
+fsm_state_encoding {50178634178637} 01 {01}
+
+fsm_state_encoding {50178634178637} 10 {10}
+
+fsm_registers {50178634178637} {wrvalid_r[1]}  {wrvalid_r[0]} 
+
+fsm_encoding {50178634178637} sequential
+
+fsm_state_encoding {50178634178637} 00 {00}
+
+fsm_state_encoding {50178634178637} 01 {01}
+
+fsm_state_encoding {50178634178637} 10 {10}
+
+fsm_registers {50178634178637} {wrvalid_r[1]}  {wrvalid_r[0]} 
+
+fsm_encoding {49321163214} sequential
+
+fsm_state_encoding {49321163214} 0001 {00}
+
+fsm_state_encoding {49321163214} ST_BUS_REQ {01}
+
+fsm_state_encoding {49321163214} ST_BUS_DAT {10}
+
+fsm_state_encoding {49321163214} ST_BUS_WAIT {11}
+
+fsm_registers {49321163214} {genblk1®bus_sm_cs[1]}  {genblk1®bus_sm_cs[0]} 
+
+fsm_encoding {5910701610703} sequential
+
+fsm_state_encoding {5910701610703} idle {00}
+
+fsm_state_encoding {5910701610703} int0 {01}
+
+fsm_state_encoding {5910701610703} int1 {10}
+
+fsm_state_encoding {5910701610703} int2 {11}
+
+fsm_registers {5910701610703} {nfifo_int®cs_state[1]}  {nfifo_int®cs_state[0]} 
+
+fsm_encoding {591590415902} onehot
+
+fsm_state_encoding {591590415902} idle {00001}
+
+fsm_state_encoding {591590415902} shift {00010}
+
+fsm_state_encoding {591590415902} parity {00100}
+
+fsm_state_encoding {591590415902} stop {01000}
+
+fsm_state_encoding {591590415902} idle1 {10000}
+
+fsm_registers {591590415902} {cs_state[4]}  {cs_state[3]}  {cs_state[2]}  {cs_state[1]}  {cs_state[0]} 
+
+fsm_encoding {5922531622531} onehot
+
+fsm_state_encoding {5922531622531} start {0000001}
+
+fsm_state_encoding {5922531622531} shift {0000010}
+
+fsm_state_encoding {5922531622531} parity {0000100}
+
+fsm_state_encoding {5922531622531} stop_1bit {0001000}
+
+fsm_state_encoding {5922531622531} stop_2bit {0010000}
+
+fsm_state_encoding {5922531622531} stop_halfbit {0100000}
+
+fsm_state_encoding {5922531622531} start1 {1000000}
+
+fsm_registers {5922531622531} {nfifo_fsm®tx_state[6]}  {nfifo_fsm®tx_state[5]}  {nfifo_fsm®tx_state[4]}  {nfifo_fsm®tx_state[3]}  {nfifo_fsm®tx_state[2]}  {nfifo_fsm®tx_state[1]}  {nfifo_fsm®tx_state[0]} 

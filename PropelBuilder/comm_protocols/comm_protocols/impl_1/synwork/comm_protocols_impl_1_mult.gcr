@@ -1,0 +1,310 @@
+i pll0_inst.lscc_pll_inst.clkop_o
+m 0 0
+u 1614 5482
+n ckid0_0 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} Clock Optimization not enabled
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_0 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_1 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[23\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[23\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_2 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[23\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[23\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[23\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_3 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[23\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[30\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[30\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_4 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[30\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[30\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[30\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_5 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[30\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[9\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[9\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_6 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[9\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[9\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[9\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_7 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[9\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[5\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[5\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_8 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[5\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[5\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[5\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_9 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[5\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_10 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_11 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[27\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[27\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_12 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[27\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[27\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[27\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_13 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[27\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[6\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[6\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_14 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[6\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[6\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[6\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_15 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[6\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[2\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[2\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_16 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[2\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[2\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[2\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_17 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[2\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[11\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[11\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_18 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[11\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[11\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[11\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_19 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[11\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[7\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[7\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_20 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[7\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[7\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[7\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_21 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[7\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[3\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[3\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_22 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[3\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[3\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[3\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_23 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[3\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[12\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[12\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_24 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[12\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[12\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[12\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_25 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[12\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[21\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[21\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_26 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[21\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[21\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[21\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_27 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[21\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[10\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[10\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_28 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[10\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[10\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[10\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_29 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[10\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[13\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[13\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_30 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[13\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[13\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[13\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_31 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[13\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[22\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[22\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_32 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[22\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[22\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[22\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_33 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[22\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[18\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[18\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_34 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[18\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[18\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[18\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_35 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[18\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[14\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[14\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_36 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[14\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[14\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[14\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_37 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[14\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[17\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[17\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_38 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[17\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[17\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[17\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_39 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[17\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[19\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[19\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_40 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[19\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[19\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[19\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_41 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[19\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_42 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_43 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[15\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[24\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[24\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_44 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[24\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[24\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[24\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_45 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[24\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[20\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[20\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_46 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[20\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[20\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[20\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_47 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[20\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[16\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[16\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_48 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[16\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[16\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[16\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_49 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[16\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[25\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[25\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_50 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[25\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[25\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[25\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_51 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[25\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[28\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[28\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_52 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[28\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[28\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[28\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_53 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[28\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_54 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_55 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[26\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[26\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_56 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[26\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[26\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[26\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_57 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[26\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[29\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[29\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_58 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[29\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[29\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[29\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_59 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[29\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[31\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[31\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_60 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[31\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[31\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[31\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_61 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[31\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[4\]\.no_mem_file\.u_mem0.clk_a_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[4\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_62 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[4\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[4\]\.no_mem_file\.u_mem0.clk_b_i}{t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[4\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_63 {t:tcm0_inst.localbus_tcm_inst.u_lscc_mem.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[4\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:tcm0_inst.localbus_tcm_inst.sys_clk}{t:tcm0_inst.localbus_tcm_inst.dbus_incr_addr[13:0].C}
+e ckid0_64 {t:tcm0_inst.localbus_tcm_inst.dbus_incr_addr[13:0].C} dffr
+p {p:system0_inst.lscc_sys_mem_inst.AXI4_ARB\.u_arbiter.clk_i}{t:system0_inst.lscc_sys_mem_inst.AXI4_ARB\.u_arbiter.s0_prio\.axi_s0_wready_reg.C}
+e ckid0_65 {t:system0_inst.lscc_sys_mem_inst.AXI4_ARB\.u_arbiter.s0_prio\.axi_s0_wready_reg.C} dffr
+p {p:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.clk_a_i}{t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_66 {t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.clk_b_i}{t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_67 {t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[0\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.clk_a_i}{t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA}
+e ckid0_68 {t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKA} DP16K
+p {p:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.clk_b_i}{t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB}
+e ckid0_69 {t:system0_inst.lscc_sys_mem_inst.CORE_MEMORY\.genblk1\.u_lscc_mem0.intf_AXI4\.ebr\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[1\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB} DP16K
+p {p:system0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.aclk_i}{t:system0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_boundary_chk.C}
+e ckid0_70 {t:system0_inst.lscc_sys_mem_inst.bridge_s0\.genblk1\.bridge_s0.araddr_boundary_chk.C} dffr
+p {p:s1_apb_uart_inst.lscc_uart_inst.u_txmitt.clk}{t:s1_apb_uart_inst.lscc_uart_inst.u_txmitt.nfifo_fsm\.tx_state[6].C}
+e ckid0_71 {t:s1_apb_uart_inst.lscc_uart_inst.u_txmitt.nfifo_fsm\.tx_state[6].C} dffr
+p {p:s1_apb_uart_inst.lscc_uart_inst.u_rxcver.clk}{t:s1_apb_uart_inst.lscc_uart_inst.u_rxcver.cs_state[4].C}
+e ckid0_72 {t:s1_apb_uart_inst.lscc_uart_inst.u_rxcver.cs_state[4].C} dffr
+p {p:s1_apb_uart_inst.lscc_uart_inst.u_intface.clk}{t:s1_apb_uart_inst.lscc_uart_inst.u_intface.nfifo_int\.cs_state[1].C}
+e ckid0_73 {t:s1_apb_uart_inst.lscc_uart_inst.u_intface.nfifo_int\.cs_state[1].C} dffr
+p {p:s0_apb_gpio_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.clk_i}{t:s0_apb_gpio_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.genblk1\.bus_sm_cs[1].C}
+e ckid0_74 {t:s0_apb_gpio_inst.lscc_gpio_inst.genblk2\.lscc_apb2lmmi_0.genblk1\.bus_sm_cs[1].C} dffr
+p {p:s0_apb_gpio_inst.lscc_gpio_inst.genblk1\.lscc_gpio_lmmi_0.clk_i}{t:s0_apb_gpio_inst.lscc_gpio_inst.genblk1\.lscc_gpio_lmmi_0.int_status_r[15:0].C}
+e ckid0_75 {t:s0_apb_gpio_inst.lscc_gpio_inst.genblk1\.lscc_gpio_lmmi_0.int_status_r[15:0].C} sdffr
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_76 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_77 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_78 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_79 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_80 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_81 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_82 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_83 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_84 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_85 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_86 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_87 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_88 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_89 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_90 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_91 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_92 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_93 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_94 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_95 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_96 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_97 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_98 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_99 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_100 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_101 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_102 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_103 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_104 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_105 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_106 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_107 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_108 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_109 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_110 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_111 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_112 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_113 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_114 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_115 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_116 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_117 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_118 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_119 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_120 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_121 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_122 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_123 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_124 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_125 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_126 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_127 {t:ENCRYPTED} <ENCRYPTED>
+d ckid0_0,ckid0_1,ckid0_2,ckid0_3,ckid0_4,ckid0_5,ckid0_6,ckid0_7,ckid0_8,ckid0_9,ckid0_10,ckid0_11,ckid0_12,ckid0_13,ckid0_14,ckid0_15,ckid0_16,ckid0_17,ckid0_18,ckid0_19,ckid0_20,ckid0_21,ckid0_22,ckid0_23,ckid0_24,ckid0_25,ckid0_26,ckid0_27,ckid0_28,ckid0_29,ckid0_30,ckid0_31,ckid0_32,ckid0_33,ckid0_34,ckid0_35,ckid0_36,ckid0_37,ckid0_38,ckid0_39,ckid0_40,ckid0_41,ckid0_42,ckid0_43,ckid0_44,ckid0_45,ckid0_46,ckid0_47,ckid0_48,ckid0_49,ckid0_50,ckid0_51,ckid0_52,ckid0_53,ckid0_54,ckid0_55,ckid0_56,ckid0_57,ckid0_58,ckid0_59,ckid0_60,ckid0_61,ckid0_62,ckid0_63,ckid0_64,ckid0_65,ckid0_66,ckid0_67,ckid0_68,ckid0_69,ckid0_70,ckid0_71,ckid0_72,ckid0_73,ckid0_74,ckid0_75,ckid0_76,ckid0_77,ckid0_78,ckid0_79,ckid0_80,ckid0_81,ckid0_82,ckid0_83,ckid0_84,ckid0_85,ckid0_86,ckid0_87,ckid0_88,ckid0_89,ckid0_90,ckid0_91,ckid0_92,ckid0_93,ckid0_94,ckid0_95,ckid0_96,ckid0_97,ckid0_98,ckid0_99,ckid0_100,ckid0_101,ckid0_102,ckid0_103,ckid0_104,ckid0_105,ckid0_106,ckid0_107,ckid0_108,ckid0_109,ckid0_110,ckid0_111,ckid0_112,ckid0_113,ckid0_114,ckid0_115,ckid0_116,ckid0_117,ckid0_118,ckid0_119,ckid0_120,ckid0_121,ckid0_122,ckid0_123,ckid0_124,ckid0_125,ckid0_126,ckid0_127 {t:pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP} PLL Clock Optimization not enabled
+i cpu0_inst.riscvrtos_inst.<ENCNET257>
+m 0 0
+u 13 83
+n ckid0_128 {t:ENCRYPTED} Clock Optimization not enabled
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_128 {t:ENCRYPTED} <ENCRYPTED>
+p {t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_129 {t:ENCRYPTED} <ENCRYPTED>
+p {p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_130 {t:ENCRYPTED} <ENCRYPTED>
+d ckid0_128,ckid0_129,ckid0_130 {t:ENCRYPTED} DCC Clock Optimization not enabled
+i cpu0_inst.riscvrtos_inst.<ENCNET210>
+m 0 0
+u 8 9
+p {t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_131 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_131 {t:ENCRYPTED} JTAGH19 Unsupported/too complex instance on clock path
+i cpu0_inst.riscvrtos_inst.<ENCNET203>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<ENCNET204>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<ENCNET211>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<ENCNET212>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<ENCNET213>
+m 0 0
+u 0 0
+i cpu0_inst.riscvrtos_inst.<ENCNET214>
+m 0 0
+u 0 0
+i osc0_inst.N_1
+m 0 0
+u 0 0
+i osc0_inst.N_2
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.clkop_o_i
+m 0 0
+u 0 0
+i pll0_inst.lscc_pll_inst.lock_o
+m 0 0
+u 0 0
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

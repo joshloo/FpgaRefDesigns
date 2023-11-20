@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/20/2023 14:09:47
+#Project Location: C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols; Project name: comm_protocols
+source "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/radiant_setup_template.tcl"
+prj_run Export -impl impl_1
+#Stop recording: 11/20/2023 14:27:20

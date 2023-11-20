@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<propelProject>
+    <builder-resource>
+        <socProject sbxfile="./comm_protocols/comm_protocols.sbx" />
+        <verifyProject sbxfile="./verification/comm_protocols_v.sbx" />
+        <AddResources>
+            <AddResource SoC="False">./comm_protocols/application</AddResource>
+        </AddResources>
+    </builder-resource>
+    <builderInfo version="2023.1.2306260112" />
+</propelProject>

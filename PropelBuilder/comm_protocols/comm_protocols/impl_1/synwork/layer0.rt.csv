@@ -1,0 +1,8 @@
+Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
+work, lscc_ram_dp_true_inst_Z34_layer0,0h:00m:07s,0h:00m:07s,-,0h:00m:00s,   252 MB,    21 MB,    21 MB,     0 MB,     0 MB
+work, tcm0_ipgen_lscc_mem_Z33_layer0,0h:00m:08s,0h:00m:08s,0h:00m:00s,0h:00m:00s,   252 MB,    21 MB,    21 MB,     0 MB,     0 MB
+work, system0_ipgen_lscc_mem_Z27_layer0,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   252 MB,     1 MB,     1 MB,     0 MB,     0 MB
+work, system0_ipgen_lscc_sys_mem_Z25_layer0,0h:00m:02s,0h:00m:01s,-,0h:00m:00s,   292 MB,     2 MB,     2 MB,     0 MB,     0 MB
+work, cpu0_ipgen_VexRiscv_balanced,0h:00m:05s,0h:00m:00s,0h:00m:00s,0h:00m:05s,   345 MB,   123 MB,     3 MB,    37 MB,    83 MB
+work, cpu0_ipgen_riscvrtos_Z15_layer0,0h:00m:04s,0h:00m:04s,0h:00m:00s,0h:00m:00s,   345 MB,    48 MB,    48 MB,     0 MB,     0 MB
+work, axi_crossbarNxM_ipgen_axi_crossbar_wr_Z5_layer0,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   345 MB,     2 MB,     2 MB,     0 MB,     0 MB

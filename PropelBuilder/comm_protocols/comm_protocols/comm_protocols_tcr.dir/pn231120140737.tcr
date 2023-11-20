@@ -1,0 +1,10 @@
+#Start recording tcl command: 11/20/2023 13:50:29
+#Project Location: C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols; Project name: comm_protocols
+source "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/radiant_setup_template.tcl"
+prj_add_source "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/pins.pdc"
+prj_enable_source "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/pins.pdc"
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/lscc/radiant/2023.1"
+prj_save 
+prj_close
+#Stop recording: 11/20/2023 14:07:37

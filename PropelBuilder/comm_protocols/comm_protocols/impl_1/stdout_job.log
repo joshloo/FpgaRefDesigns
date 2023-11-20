@@ -1,0 +1,80 @@
+{
+"Synplify Pro (R) Job Log" : {
+	"Date" : "14:14:13    20-Nov-2023",
+	"Working Directory" : "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/impl_1",
+	"Install" : "C:/lscc/radiant/2023.1/synpbase"
+},
+"impl_1" :{
+   "Start Time" : "14:10:20",
+   "Runtime" : "03m:53s",
+   "Executable Run Time" : "03m:52s",
+   "synthesis" : {
+      "Start Time" : "14:10:20",
+      "Runtime" : "03m:53s",
+      "Executable Run Time" : "03m:52s",
+      "compile" : {
+         "Start Time" : "14:10:20",
+         "Runtime" : "01m:34s",
+         "Executable Run Time" : "01m:33s",
+         "compile_flow" : {
+            "Start Time" : "14:10:20",
+            "Runtime" : "01m:21s",
+            "Executable Run Time" : "01m:20s",
+            "compiler" : {
+               "executable" : "bin64/c_hdl.exe",
+               "Run Directory" : "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "14:10:20",
+               "Run Time" : "01m:14s",
+               "Exe Run Time" : "01m:13s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            },
+            "multi_srs_gen" : {
+               "executable" : "bin64/syn_nfilter.exe",
+               "Run Directory" : "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/impl_1",
+               "Run State" : "Complete",
+               "Return Code" : "0",
+               "Has Errors" : "no",
+               "Run Start Time" : "14:11:34",
+               "Run Time" : "07s",
+               "Exe Run Time" : "07s",
+               "Memory Usage" : "-",
+               "Up-to-date (run skipped)" : "no"
+            }
+         },
+         "premap" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "14:11:41",
+            "Run Time" : "13s",
+            "Exe Run Time" : "13s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      },
+      "map" : {
+         "Start Time" : "14:11:54",
+         "Runtime" : "02m:19s",
+         "Executable Run Time" : "02m:19s",
+         "fpga_mapper" : {
+            "executable" : "bin64/m_gen_lattice.exe",
+            "Run Directory" : "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/impl_1",
+            "Run State" : "Complete",
+            "Return Code" : "1",
+            "Has Errors" : "no",
+            "Run Start Time" : "14:11:54",
+            "Run Time" : "02m:19s",
+            "Exe Run Time" : "02m:19s",
+            "Memory Usage" : "-",
+            "Up-to-date (run skipped)" : "no"
+         }
+      }
+   }
+}
+}

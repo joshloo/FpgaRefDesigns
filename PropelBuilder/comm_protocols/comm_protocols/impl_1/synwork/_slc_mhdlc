@@ -1,0 +1,17 @@
+axi2axil_M00
+axi2axil_M01
+axil2apb0
+axil2apb1
+cpu0_ipgen_BufferCC_1_
+cpu0_ipgen_FlowCCByToggle
+cpu0_ipgen_JtagBridge
+cpu0_ipgen_SystemDebugger
+cpu0_ipgen_localbus_wrapper
+cpu0_ipgen_InstructionCache
+cpu0_ipgen_DataCache
+cpu0_ipgen_dbus2axi
+osc0
+pll0
+s0_apb_gpio
+s1_apb_uart
+comm_protocols

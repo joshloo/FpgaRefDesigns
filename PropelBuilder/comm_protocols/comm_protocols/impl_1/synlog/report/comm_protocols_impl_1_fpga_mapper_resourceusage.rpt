@@ -1,0 +1,53 @@
+Resource Usage Report
+Part: lfmxo5_25-7
+
+Register bits: 4496 of 23040 (20%)
+PIC Latch:       0
+I/O cells:       19
+
+Details:
+BB:             16
+BFD1P3KX:       16
+CCU2:           731
+DCC:            1
+DP16K:          34
+DPR16X4:        8
+FD1P3BX:        10
+FD1P3DX:        570
+FD1P3IX:        3795
+FD1P3JX:        120
+GSR:            1
+IB:             2
+IFD1P3JX:       1
+INV:            71
+JTAGH19:        1
+LUT4:           5400
+MULT18X18:      2
+MULT18X36:      2
+OB:             1
+OSCA:           1
+PDPSC16K:       18
+PLL:            1
+VHI:            133
+VLO:            134
+WIDEFN9:        280
+
+Resource Usage inside macros:
+Registers: 0
+LUTs: 0
+EBRs: 0
+LRAMs: 0
+DSPs: 0
+Distributed RAMs: 0
+Carry Chains: 0
+Blackboxes: 0
+
+Mapping Summary:
+Total number of registers: 4496 + 0 = 4496 of 23040 (19.51%)
+Total number of LUTs: 5400 + 0 = 5400 
+Total number of EBRs: 52 + 0 = 52 of 80 (65.00%)
+Total number of LRAMs: 0 + 0 = 0 of 1 (0.00%)
+Total number of DSPs: 0 + 0 = 0 of 20 (0.00%)
+Total number of Distributed RAMs: 8 + 0 = 8 
+Total number of Carry Chains: 731 + 0 = 731 
+Total number of BlackBoxes: 272 + 0 = 272 

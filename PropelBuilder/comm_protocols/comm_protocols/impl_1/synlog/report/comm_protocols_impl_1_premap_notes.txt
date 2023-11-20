@@ -1,0 +1,182 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_awprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0000" on instance m_axil_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance first_transfer_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bid_reg[0].
+@N: FX493 |Applying initial value "0" on instance burst_active_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_wvalid_reg.
+@N: FX493 |Applying initial value "00" on instance s_axi_bresp_reg[1:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_awaddr_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance m_axil_awvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_bready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_wready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_awready_reg.
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_arprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance s_axi_rdata_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance s_axi_rresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rlast_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_rready_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_arvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_arready_reg.
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_awprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0000" on instance m_axil_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance first_transfer_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bid_reg[0].
+@N: FX493 |Applying initial value "0" on instance burst_active_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_wvalid_reg.
+@N: FX493 |Applying initial value "00" on instance s_axi_bresp_reg[1:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_awaddr_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance m_axil_awvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_bready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_wready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_awready_reg.
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_arprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance s_axi_rdata_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance s_axi_rresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rlast_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_rready_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_arvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_arready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_aready_reg.
+@N: FX493 |Applying initial value "0" on instance m_select_reg[0].
+@N: FX493 |Applying initial value "0" on instance m_wc_valid_reg.
+@N: FX493 |Applying initial value "0" on instance m_decerr_reg.
+@N: FX493 |Applying initial value "0" on instance m_rc_valid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axi_avalid_reg.
+@N: FX493 |Applying initial value "0" on instance grant_valid_reg.
+@N: FX493 |Applying initial value "00" on instance mask_reg[2:1].
+@N: FX493 |Applying initial value "00" on instance grant_encoded_reg[1:0].
+@N: FX493 |Applying initial value "000" on instance grant_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance genblk3\.s_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk3\.m_axi_bready_reg.
+@N: FX493 |Applying initial value "0" on instance genblk3\.s_axi_bid_reg[0].
+@N: FX493 |Applying initial value "00" on instance genblk3\.s_axi_bresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance grant_valid_reg.
+@N: FX493 |Applying initial value "00" on instance grant_encoded_reg[0:1].
+@N: FX493 |Applying initial value "0" on instance grant_reg[0].
+@N: FX493 |Applying initial value "0" on instance mask_reg[0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk2\.temp_m_axi_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_m_axi_wlast_reg.
+@N: FX493 |Applying initial value "0000" on instance genblk2\.temp_m_axi_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.s_axi_wready_reg.
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_m_axi_wvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_awvalid_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk2\.m_axi_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.m_axi_wlast_reg.
+@N: FX493 |Applying initial value "0000" on instance genblk2\.m_axi_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.m_axi_wvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk1\.s_axi_awready_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk1\.m_axi_awaddr_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance genblk1\.m_axi_awburst_reg[1:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_awcache_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_awid_reg[0].
+@N: FX493 |Applying initial value "00000000" on instance genblk1\.m_axi_awlen_reg[7:0].
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_awlock_reg.
+@N: FX493 |Applying initial value "000" on instance genblk1\.m_axi_awprot_reg[2:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_awqos_reg[3:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_awregion_reg[3:0].
+@N: FX493 |Applying initial value "000" on instance genblk1\.m_axi_awsize_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.w_select_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_bid_reg[0].
+@N: FX493 |Applying initial value "00" on instance m_ifaces\[0\]\.w_select_reg[0:1].
+@N: FX493 |Applying initial value "00" on instance m_ifaces\[1\]\.w_select_reg[0:1].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_ifaces\[0\]\.w_select_new_reg.
+@N: FX493 |Applying initial value "0" on instance m_ifaces\[1\]\.w_select_new_reg.
+@N: FX493 |Applying initial value "0" on instance m_ifaces\[0\]\.w_select_valid_reg.
+@N: FX493 |Applying initial value "0" on instance m_ifaces\[1\]\.w_select_valid_reg.
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.w_drop_reg.
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.w_select_valid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_aready_reg.
+@N: FX493 |Applying initial value "0" on instance m_select_reg[0].
+@N: FX493 |Applying initial value "0" on instance m_decerr_reg.
+@N: FX493 |Applying initial value "0" on instance m_rc_valid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axi_avalid_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk2\.temp_s_axi_rdata_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_s_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_s_axi_rlast_reg.
+@N: FX493 |Applying initial value "00" on instance genblk2\.temp_s_axi_rresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.m_axi_rready_reg.
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_s_axi_rvalid_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk2\.s_axi_rdata_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.s_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.s_axi_rlast_reg.
+@N: FX493 |Applying initial value "00" on instance genblk2\.s_axi_rresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.s_axi_rvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_arvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk1\.s_axi_arready_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk1\.m_axi_araddr_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance genblk1\.m_axi_arburst_reg[1:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_arcache_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_arid_reg[0].
+@N: FX493 |Applying initial value "00000000" on instance genblk1\.m_axi_arlen_reg[7:0].
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_arlock_reg.
+@N: FX493 |Applying initial value "000" on instance genblk1\.m_axi_arprot_reg[2:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_arqos_reg[3:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_arregion_reg[3:0].
+@N: FX493 |Applying initial value "000" on instance genblk1\.m_axi_arsize_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_rvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_rlast_reg.
+@N: FX493 |Applying initial value "000000000000000000000000000000000" on instance LOGIC\.r_data[32:0].
+@N: FX493 |Applying initial value "0" on instance LOGIC\.r_valid.
+@N: FX493 |Applying initial value "000000000000000000000000000000000000" on instance LOGIC\.r_data[35:0].
+@N: FX493 |Applying initial value "0" on instance LOGIC\.r_valid.
+@N: FX493 |Applying initial value "0" on instance S_AXI_BRESP_1[1].
+@N: FX493 |Applying initial value "0" on instance S_AXI_RRESP_1[1].
+@N: FX493 |Applying initial value "0" on instance S_AXI_BVALID.
+@N: FX493 |Applying initial value "0" on instance S_AXI_RVALID.
+@N: FX493 |Applying initial value "0" on instance M_APB_PENABLE.
+@N: FX493 |Applying initial value "0" on instance M_APB_PSEL.
+@N: FX493 |Applying initial value "000000000000000000000000000000000" on instance LOGIC\.r_data[32:0].
+@N: FX493 |Applying initial value "0" on instance LOGIC\.r_valid.
+@N: FX493 |Applying initial value "000000000000000000000000000000000000" on instance LOGIC\.r_data[35:0].
+@N: FX493 |Applying initial value "0" on instance LOGIC\.r_valid.
+@N: FX493 |Applying initial value "0" on instance S_AXI_BRESP_1[1].
+@N: FX493 |Applying initial value "0" on instance S_AXI_RRESP_1[1].
+@N: FX493 |Applying initial value "0" on instance S_AXI_BVALID.
+@N: FX493 |Applying initial value "0" on instance S_AXI_RVALID.
+@N: FX493 |Applying initial value "0" on instance M_APB_PENABLE.
+@N: FX493 |Applying initial value "0" on instance M_APB_PSEL.
+@N: FX493 |Applying initial value "0" on instance inputArea_target.
+@N: FX493 |Applying initial value "0000" on instance jtag_tap_fsm_state[3:0].
+@N: FX493 |Applying initial value "1111111111111111111111111111111111111111111111111111111111111111" on instance clint_cmp[63:0].
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1960:4:1960:9|Removing sequential instance awaddr_in_r[31:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1993:4:1993:9|Removing sequential instance awaddr_pipe_r[31:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1993:4:1993:9|Removing sequential instance awburst_pipe_r[1:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2095:4:2095:9|Removing sequential instance awid_in_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1993:4:1993:9|Removing sequential instance awsize_pipe_r[2:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2034:4:2034:9|Removing sequential instance delayed_write_r (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":754:2:754:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z31_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":769:2:769:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z31_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":754:2:754:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z67_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":769:2:769:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z67_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2103:4:2103:9|Removing sequential instance axi_bid_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2503:4:2503:9|Removing sequential instance axi_rid_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2495:4:2495:9|Removing sequential instance arid_in_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1924:4:1924:9|Removing sequential instance axi_awready_r (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2012:4:2012:9|Removing sequential instance axi_wready_r (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2215:4:2215:9|Removing sequential instance mem_wsize_r[2:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1960:4:1960:9|Removing sequential instance awsize_in_r[2:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: MO225 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\s0_apb_gpio\1.6.1\rtl\s0_apb_gpio.v":321:16:321:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.s0_apb_gpio_ipgen_lscc_apb2lmmi_16s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\s1_apb_uart\1.3.0\rtl\s1_apb_uart.v":1070:16:1070:21|There are no possible illegal states for state machine nfifo_int\.cs_state[3:0] (in view: work.s1_apb_uart_ipgen_lscc_uart_intface_Z23_layer0(verilog)); safe FSM implementation is not required.
+@N: FX1184 |Applying syn_allowed_resources blockrams=80 on top level netlist comm_protocols 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

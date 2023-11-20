@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LFCPNX" date="2023 04 28 13:34:10" device="LFCPNX-100" gen_platform="Propel" generator="ipgen" library="module" module="axi_interconnect_lite_dv" name="axi1x2" package="ASG256" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="0.2.0">
+ <Package>
+  <File modified="2023 04 28 13:34:08" name="axi1x2.cfg" type="cfg"/>
+  <File modified="2023 04 28 13:34:08" name="misc/axi1x2_tmpl.v" type="template_verilog"/>
+  <File modified="2023 04 28 13:34:08" name="misc/axi1x2_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 04 28 13:34:08" name="rtl/axi1x2.v" type="top_level_verilog"/>
+  <File modified="2023 04 28 13:34:08" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 04 28 13:34:08" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 04 28 13:34:08" name="eval/dut_params.v" type="dependency_file"/>
+  <File modified="2023 04 28 13:34:08" name="eval/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 04 28 13:34:08" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 04 28 13:34:08" name="design.xml" type="IP-XACT_design"/>
+  <Directory modified="2023 04 28 13:29:58" name="lib" type="dependency_file"/>
+  <File modified="2023 04 28 01:30:32" name="testbench/reserve.txt" type="testbench"/>
+  <File modified="2023 04 28 01:30:13" name="eval/genHierRtl.py" type="eval"/>
+ </Package>
+</RadiantModule>

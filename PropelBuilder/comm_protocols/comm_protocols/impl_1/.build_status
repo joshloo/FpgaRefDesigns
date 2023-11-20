@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1700461035">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1700461035"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1700461040"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1700461054"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1700460870">
+            <Task name="Map" build_result="2" update_result="0" update_time="1700460870"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1700459513"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1700460987">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1700460987"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1700460995"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1700460863">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1700460863"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1700459432"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1700459432"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1700460587"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1700459513"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1700459513"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1700459513"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1700459513"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1700459513"/>
+        </Milestone>
+        <Report name="IBIS/comm_protocols_impl_1.ibs" last_build_time="1700461040" last_build_size="208121"/>
+        <Report name="comm_protocols_impl_1.bgn" last_build_time="1700461034" last_build_size="4899"/>
+        <Report name="comm_protocols_impl_1.bit" last_build_time="1700461034" last_build_size="587094"/>
+        <Report name="comm_protocols_impl_1.twr.html" last_build_time="1700460995" last_build_size="435426"/>
+        <Report name="comm_protocols_impl_1.udb" last_build_time="1700460987" last_build_size="1616874"/>
+        <Report name="comm_protocols_impl_1_map.udb" last_build_time="1700460870" last_build_size="967329"/>
+        <Report name="comm_protocols_impl_1_rtl.udb" last_build_time="1700459461" last_build_size="847220"/>
+        <Report name="comm_protocols_impl_1_syn.udb" last_build_time="1700460863" last_build_size="727173"/>
+        <Report name="comm_protocols_impl_1_vo.sdf" last_build_time="1700461053" last_build_size="20200952"/>
+        <Report name="comm_protocols_impl_1_vo.vo" last_build_time="1700461052" last_build_size="25822655"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,390 @@
+# Mon Nov 20 14:11:41 2023
+
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202303lat, Build 070R, Built Jun  8 2023 11:14:23, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 122MB peak: 122MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 145MB peak: 145MB)
+
+Reading constraint file: C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\comm_protocols_impl_1_cpe.ldc
+@W: MT453 :"c:/code/fpgarefdesigns/propelbuilder/comm_protocols/comm_protocols/impl_1/comm_protocols_impl_1_cpe.ldc":5:0:5:0|clock period is too long for clock osc0_inst_lf_clk_out_o, changing period from 31250.0 to 15625.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 15625.0 ns to 7812.5 ns. 
+@L: C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\comm_protocols_impl_1_scck.rpt 
+See clock summary report "C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\comm_protocols_impl_1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 181MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 182MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 194MB peak: 194MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 195MB peak: 197MB)
+
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_awprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0000" on instance m_axil_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance first_transfer_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bid_reg[0].
+@N: FX493 |Applying initial value "0" on instance burst_active_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_wvalid_reg.
+@N: FX493 |Applying initial value "00" on instance s_axi_bresp_reg[1:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_awaddr_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance m_axil_awvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_bready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_wready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_awready_reg.
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_arprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance s_axi_rdata_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance s_axi_rresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rlast_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_rready_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_arvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_arready_reg.
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_awprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0000" on instance m_axil_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance first_transfer_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bid_reg[0].
+@N: FX493 |Applying initial value "0" on instance burst_active_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_wvalid_reg.
+@N: FX493 |Applying initial value "00" on instance s_axi_bresp_reg[1:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance m_axil_awaddr_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance m_axil_awvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_bready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_wready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_awready_reg.
+@N: FX493 |Applying initial value "000" on instance burst_size_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance id_reg[0].
+@N: FX493 |Applying initial value "000" on instance m_axil_arprot_reg[2:0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance s_axi_rdata_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance s_axi_rresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rlast_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_rid_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_axi_rvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_rready_reg.
+@N: FX493 |Applying initial value "0" on instance m_axil_arvalid_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_arready_reg.
+@N: FX493 |Applying initial value "0" on instance s_axi_aready_reg.
+@N: FX493 |Applying initial value "0" on instance m_select_reg[0].
+@N: FX493 |Applying initial value "0" on instance m_wc_valid_reg.
+@N: FX493 |Applying initial value "0" on instance m_decerr_reg.
+@N: FX493 |Applying initial value "0" on instance m_rc_valid_reg.
+@N: FX493 |Applying initial value "0" on instance m_axi_avalid_reg.
+@N: FX493 |Applying initial value "0" on instance grant_valid_reg.
+@N: FX493 |Applying initial value "00" on instance mask_reg[2:1].
+@N: FX493 |Applying initial value "00" on instance grant_encoded_reg[1:0].
+@N: FX493 |Applying initial value "000" on instance grant_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance genblk3\.s_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk3\.m_axi_bready_reg.
+@N: FX493 |Applying initial value "0" on instance genblk3\.s_axi_bid_reg[0].
+@N: FX493 |Applying initial value "00" on instance genblk3\.s_axi_bresp_reg[1:0].
+@N: FX493 |Applying initial value "0" on instance grant_valid_reg.
+@N: FX493 |Applying initial value "00" on instance grant_encoded_reg[0:1].
+@N: FX493 |Applying initial value "0" on instance grant_reg[0].
+@N: FX493 |Applying initial value "0" on instance mask_reg[0].
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk2\.temp_m_axi_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_m_axi_wlast_reg.
+@N: FX493 |Applying initial value "0000" on instance genblk2\.temp_m_axi_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.s_axi_wready_reg.
+@N: FX493 |Applying initial value "0" on instance genblk2\.temp_m_axi_wvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_awvalid_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk2\.m_axi_wdata_reg[31:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.m_axi_wlast_reg.
+@N: FX493 |Applying initial value "0000" on instance genblk2\.m_axi_wstrb_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk2\.m_axi_wvalid_reg.
+@N: FX493 |Applying initial value "0" on instance genblk1\.s_axi_awready_reg.
+@N: FX493 |Applying initial value "00000000000000000000000000000000" on instance genblk1\.m_axi_awaddr_reg[31:0].
+@N: FX493 |Applying initial value "00" on instance genblk1\.m_axi_awburst_reg[1:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_awcache_reg[3:0].
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_awid_reg[0].
+@N: FX493 |Applying initial value "00000000" on instance genblk1\.m_axi_awlen_reg[7:0].
+@N: FX493 |Applying initial value "0" on instance genblk1\.m_axi_awlock_reg.
+@N: FX493 |Applying initial value "000" on instance genblk1\.m_axi_awprot_reg[2:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_awqos_reg[3:0].
+@N: FX493 |Applying initial value "0000" on instance genblk1\.m_axi_awregion_reg[3:0].
+@N: FX493 |Applying initial value "000" on instance genblk1\.m_axi_awsize_reg[2:0].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.w_select_reg[0].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_bid_reg[0].
+@N: FX493 |Applying initial value "00" on instance m_ifaces\[0\]\.w_select_reg[0:1].
+@N: FX493 |Applying initial value "00" on instance m_ifaces\[1\]\.w_select_reg[0:1].
+@N: FX493 |Applying initial value "0" on instance s_ifaces\[0\]\.decerr_m_axi_bvalid_reg.
+@N: FX493 |Applying initial value "0" on instance m_ifaces\[0\]\.w_select_new_reg.
+@N: FX493 |Applying initial value "0" on instance m_ifaces\[1\]\.w_select_new_reg.
+
+Only the first 100 messages of id 'FX493' are reported. To see all messages use 'report_messages -log C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\synlog\comm_protocols_impl_1_premap.srr -id FX493' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {FX493} -count unlimited' in the Tcl shell.
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN132 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\s1_apb_uart\1.3.0\rtl\s1_apb_uart.v":2491:16:2491:21|Removing sequential instance s1_apb_uart_inst.lscc_uart_inst.u_txmitt.nfifo_thrrdy.thr_ready because it is equivalent to instance s1_apb_uart_inst.lscc_uart_inst.u_txmitt.genblk4.thr_empty. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 252MB peak: 252MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 252MB peak: 252MB)
+
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 252MB peak: 252MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 252MB peak: 253MB)
+
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1960:4:1960:9|Removing sequential instance awaddr_in_r[31:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1993:4:1993:9|Removing sequential instance awaddr_pipe_r[31:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1993:4:1993:9|Removing sequential instance awburst_pipe_r[1:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2095:4:2095:9|Removing sequential instance awid_in_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1993:4:1993:9|Removing sequential instance awsize_pipe_r[2:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2034:4:2034:9|Removing sequential instance delayed_write_r (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":754:2:754:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z31_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":769:2:769:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z31_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":754:2:754:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z67_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2023.1\ip\pmi\../avant/ram_dp_true/rtl\lscc_ram_dp_true.v":769:2:769:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z67_layer0(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2103:4:2103:9|Removing sequential instance axi_bid_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2503:4:2503:9|Removing sequential instance axi_rid_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2495:4:2495:9|Removing sequential instance arid_in_r[3:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1924:4:1924:9|Removing sequential instance axi_awready_r (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2012:4:2012:9|Removing sequential instance axi_wready_r (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":2215:4:2215:9|Removing sequential instance mem_wsize_r[2:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v":1960:4:1960:9|Removing sequential instance awsize_in_r[2:0] (in view: work.system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":479:17:479:33|Instance axi2axil_M00_inst of partition view:work.axi2axil_M00(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v":544:17:544:33|Instance axi2axil_M01_inst of partition view:work.axi2axil_M01(verilog) has no references to its outputs; instance not removed. 
+Encoding state machine <encrypted> (in view: work.axi2axil_M00_ipgen_axi_axil_adapter_wr_Z1_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.axi2axil_M00_ipgen_axi_axil_adapter_rd_Z2_layer0(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+Encoding state machine <encrypted> (in view: work.axi2axil_M01_ipgen_axi_axil_adapter_wr_Z3_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.axi2axil_M01_ipgen_axi_axil_adapter_rd_Z4_layer0(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+Encoding state machine <encrypted> (in view: work.axi_crossbarNxM_ipgen_axi_crossbar_addr_Z6_layer0(verilog))
+original code -> new code
+   000 -> 0
+   001 -> 1
+Encoding state machine <encrypted> (in view: work.axi_crossbarNxM_ipgen_axi_crossbar_addr_Z10_layer0(verilog))
+original code -> new code
+   000 -> 0
+   001 -> 1
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_VexRiscv_balanced(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_VexRiscv_balanced(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_gateway_22_32_4s_1s_3s_1_2s(verilog))
+original code -> new code
+   000 -> 00000001
+   001 -> 00000010
+   010 -> 00000100
+   011 -> 00001000
+   100 -> 00010000
+   101 -> 00100000
+   110 -> 01000000
+   111 -> 10000000
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_dbus2axi_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.cpu0_ipgen_dbus2axi_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine genblk1\.bus_sm_cs[3:0] (in view: work.s0_apb_gpio_ipgen_lscc_apb2lmmi_16s_6s_1s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+@N: MO225 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\s0_apb_gpio\1.6.1\rtl\s0_apb_gpio.v":321:16:321:21|There are no possible illegal states for state machine genblk1\.bus_sm_cs[3:0] (in view: work.s0_apb_gpio_ipgen_lscc_apb2lmmi_16s_6s_1s_1_2_4_8_4s(verilog)); safe FSM implementation is not required.
+Encoding state machine nfifo_int\.cs_state[3:0] (in view: work.s1_apb_uart_ipgen_lscc_uart_intface_Z23_layer0(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+@N: MO225 :"c:\code\fpgarefdesigns\propelbuilder\comm_protocols\comm_protocols\comm_protocols\lib\latticesemi.com\ip\s1_apb_uart\1.3.0\rtl\s1_apb_uart.v":1070:16:1070:21|There are no possible illegal states for state machine nfifo_int\.cs_state[3:0] (in view: work.s1_apb_uart_ipgen_lscc_uart_intface_Z23_layer0(verilog)); safe FSM implementation is not required.
+Encoding state machine cs_state[4:0] (in view: work.s1_apb_uart_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine nfifo_fsm\.tx_state[6:0] (in view: work.s1_apb_uart_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64(verilog))
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 258MB peak: 258MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 259MB peak: 259MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=80 on top level netlist comm_protocols 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 259MB peak: 260MB)
+
+@W: Z241 :"c:/code/fpgarefdesigns/propelbuilder/comm_protocols/comm_protocols/impl_1/comm_protocols_impl_1_cpe.ldc":3:0:3:0|Source for clock osc0_inst_hf_clk_out_o should be moved to net osc0_inst.lscc_osc_inst.hf_clk_out_o connected to driving cell pin osc0_inst.lscc_osc_inst.OSCA\.u_OSC.HFCLKOUT 
+@W: Z241 :"c:/code/fpgarefdesigns/propelbuilder/comm_protocols/comm_protocols/impl_1/comm_protocols_impl_1_cpe.ldc":5:0:5:0|Source for clock osc0_inst_lf_clk_out_o should be moved to net osc0_inst.lscc_osc_inst.lf_clk_out_o connected to driving cell pin osc0_inst.lscc_osc_inst.OSCA\.u_OSC.LFCLKOUT 
+Some data will not be shown as it is part of encrypted module
+
+
+Clock Summary
+******************
+
+          Start                                                                                          Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                                          Frequency     Period        Type         Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                                                                         200.0 MHz     5.000         system       system_clkgroup           0    
+                                                                                                                                                                                 
+0 -       osc0_inst_hf_clk_out_o                                                                         50.0 MHz      20.000        declared     default_clkgroup          0    
+                                                                                                                                                                                 
+0 -       osc0_inst_lf_clk_out_o                                                                         0.1 MHz       15625.000     declared     default_clkgroup          0    
+                                                                                                                                                                                 
+0 -       pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     5836 
+                                                                                                                                                                                 
+0 -       cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     83   
+                                                                                                                                                                                 
+0 -       cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     9    
+=================================================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                                                               Clock     Source                                                          Clock Pin                                      Non-clock Pin     Non-clock Pin
+Clock                                                                                          Load      Pin                                                             Seq Example                                    Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                                         0         -                                                               -                                              -                 -            
+                                                                                                                                                                                                                                                       
+osc0_inst_hf_clk_out_o                                                                         0         osc0_inst.lscc_osc_inst.OSCA\.u_OSC.HFCLKOUT(OSCA)              -                                              -                 -            
+                                                                                                                                                                                                                                                       
+osc0_inst_lf_clk_out_o                                                                         0         osc0_inst.lscc_osc_inst.OSCA\.u_OSC.LFCLKOUT(OSCA)              -                                              -                 -            
+                                                                                                                                                                                                                                                       
+pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          5836      pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP(PLL)     tcm0_inst.localbus_tcm_inst.ben_a_r[3:0].C     -                 -            
+                                                                                                                                                                                                                                                       
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               83        -                                                               -                                              -                 -            
+                                                                                                                                                                                                                                                       
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                               -                                              -                 -            
+=======================================================================================================================================================================================================================================================
+
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 9 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 5565 clock pin(s) of sequential element(s)
+0 instances converted, 5565 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_131     ENCRYPTED           JTAGH19                9          ENCRYPTED      
+=======================================================================================
+========================================================================== Gated/Generated Clocks ===========================================================================
+Clock Tree ID     Driving Element                                            Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_127     pll0_inst.lscc_pll_inst.gen_no_refclk_mon\.u_PLL.CLKOP     PLL                    5482                   ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_130     ENCRYPTED                                                  DCC                    83                     ENCRYPTED           Clock Optimization not enabled
+=============================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 251MB peak: 260MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:12s; Memory used current: 254MB peak: 260MB)
+
+@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\comm_protocols_impl_1_cck.rpt" .
+
+Finished constraint checker (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 257MB peak: 260MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 163MB peak: 260MB)
+
+Process took 0h:00m:12s realtime, 0h:00m:12s cputime
+# Mon Nov 20 14:11:53 2023
+
+###########################################################]

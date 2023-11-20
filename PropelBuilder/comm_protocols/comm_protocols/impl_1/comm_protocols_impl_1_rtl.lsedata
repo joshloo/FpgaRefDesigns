@@ -1,0 +1,20 @@
+<top name = "comm_protocols"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "pll0_inst_clkop_o_net"  type = "net" />
+    <clockitem name = "osc0_inst_hf_clk_out_o_net"  type = "net" />
+    <clockitem name = "cpu0_inst/riscvrtos_inst/genblk_debug_en.vex_debug0/TCK"  type = "net" />
+    <clockitem name = "cpu0_inst/riscvrtos_inst/genblk_debug_en.vex_debug0/vex_jtag_bridge_i/bscan_DRCK"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 4
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

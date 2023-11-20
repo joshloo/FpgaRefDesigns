@@ -1,0 +1,2059 @@
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.1.1.200.1
+
+Mon Nov 20 14:16:32 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp 7_High-Performance_1.0V -hsp m -pwrprd -html -rpt comm_protocols_impl_1.twr comm_protocols_impl_1.udb -gui
+
+-------------------------------------------
+Design:          comm_protocols
+Family:          LFMXO5
+Device:          LFMXO5-25
+Package:         BBG400
+Performance:     7_High-Performance_1.0V
+Package Status:                     Final          Version 8
+Performance Hardware Data Status :   Final Version 1.8
+-------------------------------------------
+
+
+=====================================================================
+                    Table of Contents
+=====================================================================
+    1  DESIGN CHECKING
+        1.1  SDC Constraints
+        1.2  Constraint Coverage
+        1.3  Overall Summary
+        1.4  Unconstrained Report
+        1.5  Combinational Loop
+    2  Setup at Speed Grade 7_High-Performance_1.0V Corner at 85 Degrees
+        2.1  Clock Summary
+        2.2  Endpoint slacks
+        2.3  Detailed Report
+    3  Hold at Speed Grade m Corner at 0 Degrees
+        3.1  Endpoint slacks
+        3.2  Detailed Report
+
+=====================================================================
+                    End of Table of Contents
+=====================================================================
+
+==============================================
+1  DESIGN CHECKING
+==============================================
+
+1.1  SDC Constraints
+=====================
+create_generated_clock -name {pll0_inst_clkop_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 2 [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] 
+create_clock -name {osc0_inst_lf_clk_out_o} -period 31250 -waveform {0.000 15625.000} [get_pins osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/LFCLKOUT]
+create_clock -name {osc0_inst_hf_clk_out_o} -period 20 -waveform {0.000 10.000} [get_pins osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/HFCLKOUT]
+
+1.2  Constraint Coverage
+---------------------------
+Constraint Coverage: 99.3013%
+
+
+1.3  Overall Summary
+---------------------------
+ Setup at Speed Grade 7_High-Performance_1.0V Corner at 85 Degrees    Timing Errors: 6 endpoints;  Total Negative Slack: 1.613 ns 
+ Hold at Speed Grade m Corner at 0 Degrees                            Timing Errors: 1 endpoints;  Total Negative Slack: 0.079 ns 
+
+1.4  Unconstrained Report
+===========================
+
+1.4.1  Unconstrained Start/End Points
+--------------------------------------
+
+Clocked but unconstrained timing start points
+-------------------------------------------------------------------
+         Listing 1 Start Points         |           Type           
+-------------------------------------------------------------------
+s1_apb_uart_inst/lscc_uart_inst/u_txmitt/nfifo_fsm.tx_output.ff_inst/Q                           
+                                        |          No required time
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing start po |                          
+ints                                    |                         1
+                                        |                          
+-------------------------------------------------------------------
+
+Clocked but unconstrained timing end points
+-------------------------------------------------------------------
+         Listing 10 End Points          |           Type           
+-------------------------------------------------------------------
+cpu0_inst/riscvrtos_inst/secured_instance_77_1/secured_instance_54_5/DF                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_1/secured_instance_54_6/DF                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_1/secured_instance_54_7/DF                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_1/secured_instance_54_8/LSR                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_2/secured_instance_55_4/LSR                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_2/secured_instance_55_5/LSR                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_2/secured_instance_55_6/LSR                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_2/secured_instance_55_7/LSR                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_2/secured_instance_55_8/LSR                           
+                                        |           No arrival time
+cpu0_inst/riscvrtos_inst/secured_instance_77_2/secured_instance_55_9/LSR                           
+                                        |           No arrival time
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing end poin |                          
+ts                                      |                       188
+                                        |                          
+-------------------------------------------------------------------
+
+1.4.2  Start/End Points Without Timing Constraints
+---------------------------------------------------
+
+I/O ports without constraint
+----------------------------
+Possible constraints to use on I/O ports are:
+set_input_delay,
+set_output_delay,
+set_max_delay,
+create_clock,
+create_generated_clock,
+...
+
+-------------------------------------------------------------------
+     Listing 10 Start or End Points     |           Type           
+-------------------------------------------------------------------
+s0_gpio[0]                              |                     input
+s0_gpio[9]                              |                     input
+s0_gpio[5]                              |                     input
+s0_gpio[1]                              |                     input
+s0_gpio[10]                             |                     input
+s0_gpio[6]                              |                     input
+s0_gpio[2]                              |                     input
+s0_gpio[11]                             |                     input
+s0_gpio[7]                              |                     input
+s0_gpio[3]                              |                     input
+-------------------------------------------------------------------
+                                        |                          
+Number of I/O ports without constraint  |                        35
+                                        |                          
+-------------------------------------------------------------------
+
+Nets without clock definition
+Define a clock on a top level port or a generated clock on a clock divider pin associated with this net(s).
+--------------------------------------------------
+There is no instance satisfying reporting criteria
+
+
+
+1.5  Combinational Loop
+========================
+None
+
+===============================================================
+2  Setup at Speed Grade 7_High-Performance_1.0V Corner at 85 Degrees
+===============================================================
+
+2.1  Clock Summary
+=======================
+
+2.1.1 Clock "pll0_inst_clkop_o_net"
+=======================
+create_generated_clock -name {pll0_inst_clkop_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 2 [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+      Clock pll0_inst_clkop_o_net       |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |             Target |          10.000 ns |        100.000 MHz 
+                                        | Actual (all paths) |          10.564 ns |         94.661 MHz 
+s0_apb_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0/genblk2[0].genblk1.genblk1.u_BB_data.PIC_inst_in/CLK (MPW)                                                                
+                                        |   (50% duty cycle) |           4.000 ns |        250.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+      Clock pll0_inst_clkop_o_net       |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From osc0_inst_lf_clk_out_o            |                    10.000 ns |             slack = 9.900 ns 
+ From osc0_inst_hf_clk_out_o            |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.1.2 Clock "osc0_inst_lf_clk_out_o"
+=======================
+create_clock -name {osc0_inst_lf_clk_out_o} -period 31250 -waveform {0.000 15625.000} [get_pins osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/LFCLKOUT]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+      Clock osc0_inst_lf_clk_out_o      |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From osc0_inst_lf_clk_out_o            |             Target |       31250.000 ns |          0.032 MHz 
+                                        | Actual (all paths) |       30625.000 ns |          0.033 MHz 
+osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/LFCLKOUT (MPW)                                                                
+                                        |   (50% duty cycle) |       30625.000 ns |          0.033 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+      Clock osc0_inst_lf_clk_out_o      |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |                         ---- |                      No path 
+ From osc0_inst_hf_clk_out_o            |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.1.3 Clock "osc0_inst_hf_clk_out_o"
+=======================
+create_clock -name {osc0_inst_hf_clk_out_o} -period 20 -waveform {0.000 10.000} [get_pins osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/HFCLKOUT]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+      Clock osc0_inst_hf_clk_out_o      |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From osc0_inst_hf_clk_out_o            |             Target |          20.000 ns |         50.000 MHz 
+                                        | Actual (all paths) |           4.354 ns |        229.674 MHz 
+osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/HFCLKOUT (MPW)                                                                
+                                        |   (50% duty cycle) |           4.354 ns |        229.674 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+      Clock osc0_inst_hf_clk_out_o      |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |                         ---- |                      No path 
+ From osc0_inst_lf_clk_out_o            |                         ---- |                      No path 
+------------------------------------------------------------------------------------------------------
+
+2.2  Endpoint slacks
+=======================
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR6              
+                                         |   -0.564 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR5              
+                                         |   -0.431 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR7              
+                                         |   -0.195 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR8              
+                                         |   -0.185 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR5              
+                                         |   -0.185 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR8              
+                                         |   -0.053 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR9              
+                                         |    0.122 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR9              
+                                         |    0.161 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR7              
+                                         |    0.177 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_381/ADR10              
+                                         |    0.382 ns 
+-------------------------------------------------------
+                                         |             
+Setup # of endpoints with negative slack:|           6 
+                                         |             
+-------------------------------------------------------
+
+2.3  Detailed Report
+=======================
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR6  (EBR_CORE_EBR_CORE_R19C39)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 13
+Delay Ratio      : 66.3% (route), 33.7% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -0.564 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.144                  5.557  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/Z
+                                          SLICE_R42C23C            CTOF_DEL           0.268                  5.825  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_354
+                                                                   NET DELAY          0.449                  6.274  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_93/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_93/Z
+                                          SLICE_R41C24A            CTOF_DEL           0.268                  6.542  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_54
+                                                                   NET DELAY          0.144                  6.686  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1038/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1038/Z
+                                          SLICE_R41C24C            CTOF_DEL           0.268                  6.954  17      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_840
+                                                                   NET DELAY          0.198                  7.152  17      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2293/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2293/Z
+                                          SLICE_R41C24B            CTOF_DEL           0.268                  7.420  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6393
+                                                                   NET DELAY          0.338                  7.758  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2294/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2294/Z
+                                          SLICE_R43C24A            CTOF_DEL           0.268                  8.026  15      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5742
+                                                                   NET DELAY          0.589                  8.615  15      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2204/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2204/Z
+                                          SLICE_R49C22B            CTOF_DEL           0.268                  8.883  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6342
+                                                                   NET DELAY          0.208                  9.091  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2235/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2235/Z
+                                          SLICE_R49C22A            CTOF_DEL           0.268                  9.359  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6359
+                                                                   NET DELAY          0.582                  9.941  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2234/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2234/Z
+                                          SLICE_R48C29A            CTOF_DEL           0.268                 10.209  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6361
+                                                                   NET DELAY          0.566                 10.775  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2292/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2292/Z
+                                          SLICE_R40C29D            CTOF_DEL           0.268                 11.043  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_336
+                                                                   NET DELAY          0.640                 11.683  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2287/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2287/Z
+                                          SLICE_R39C38A            CTOF_DEL           0.268                 11.951  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_347
+                                                                   NET DELAY          1.352                 13.303  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR6
+                                                                                      0.000                 13.303  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(13.303)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                                        -0.564  
+
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR5  (EBR_CORE_EBR_CORE_R19C42)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 71.0% (route), 29.0% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -0.431 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.449                  5.862  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_55/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_55/Z
+                                          SLICE_R40C21D            CTOF_DEL           0.268                  6.130  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_353
+                                                                   NET DELAY          0.287                  6.417  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_96/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_96/Z
+                                          SLICE_R42C21A            CTOF_DEL           0.268                  6.685  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_352
+                                                                   NET DELAY          0.144                  6.829  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1044/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1044/Z
+                                          SLICE_R42C21C            CTOF_DEL           0.268                  7.097  38      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_852
+                                                                   NET DELAY          0.640                  7.737  38      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2218/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2218/Z
+                                          SLICE_R45C20B            CTOF_DEL           0.268                  8.005  8       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_4781
+                                                                   NET DELAY          0.846                  8.851  8       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2229/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2229/Z
+                                          SLICE_R49C25B            CTOF_DEL           0.268                  9.119  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5734
+                                                                   NET DELAY          0.763                  9.882  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2227/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2227/Z
+                                          SLICE_R41C22B            CTOF_DEL           0.268                 10.150  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6356
+                                                                   NET DELAY          0.208                 10.358  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2269/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2269/Z
+                                          SLICE_R41C22A            CTOF_DEL           0.268                 10.626  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_333
+                                                                   NET DELAY          0.908                 11.534  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_9/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_9/Z
+                                          SLICE_R33C34A            CTOF_DEL           0.268                 11.802  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_344
+                                                                   NET DELAY          1.368                 13.170  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR5
+                                                                                      0.000                 13.170  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(13.170)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                                        -0.431  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_1105/Q  (SLICE_R27C55D)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR7  (EBR_CORE_EBR_CORE_R19C39)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 10
+Delay Ratio      : 72.1% (route), 27.9% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -0.195 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_1105/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_1105/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_1105/Q
+                                          SLICE_R27C55D            REG_DEL            0.385                  3.002  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1946
+                                                                   NET DELAY          1.199                  4.201  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_836/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_836/Z
+                                          SLICE_R17C40B            CTOF_DEL           0.268                  4.469  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_341
+                                                                   NET DELAY          0.144                  4.613  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_1035/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_1035/Z
+                                          SLICE_R17C40D            CTOOF_DEL          0.345                  4.958  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1258
+                                                                   NET DELAY          1.114                  6.072  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_421/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_421/Z
+                                          SLICE_R29C27A            CTOF_DEL           0.268                  6.340  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2082
+                                                                   NET DELAY          0.338                  6.678  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_403/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_403/Z
+                                          SLICE_R30C27A            CTOF_DEL           0.268                  6.946  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2047
+                                                                   NET DELAY          0.788                  7.734  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_295/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_295/Z
+                                          SLICE_R36C38B            CTOF_DEL           0.268                  8.002  21      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1278
+                                                                   NET DELAY          0.735                  8.737  21      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_171/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_171/Z
+                                          SLICE_R38C30C            CTOF_DEL           0.268                  9.005  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1156
+                                                                   NET DELAY          0.455                  9.460  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_169/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_169/Z
+                                          SLICE_R39C32C            CTOF_DEL           0.268                  9.728  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1674
+                                                                   NET DELAY          0.714                 10.442  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_151/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_151/Z
+                                          SLICE_R49C32D            CTOF_DEL           0.268                 10.710  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1675
+                                                                   NET DELAY          0.198                 10.908  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_940/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_940/Z
+                                          SLICE_R49C32A            CTOF_DEL           0.268                 11.176  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_853
+                                                                   NET DELAY          1.758                 12.934  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR7
+                                                                                      0.000                 12.934  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.934)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                                        -0.195  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR8  (EBR_CORE_EBR_CORE_R19C39)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 70.3% (route), 29.7% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -0.185 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.144                  5.557  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/Z
+                                          SLICE_R42C23C            CTOF_DEL           0.268                  5.825  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_354
+                                                                   NET DELAY          0.576                  6.401  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_88/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_88/Z
+                                          SLICE_R48C25A            CTOF_DEL           0.268                  6.669  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_59
+                                                                   NET DELAY          0.341                  7.010  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1034/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1034/Z
+                                          SLICE_R50C25C            CTOF_DEL           0.268                  7.278  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_846
+                                                                   NET DELAY          0.195                  7.473  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_939/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_939/Z
+                                          SLICE_R50C25D            CTOF_DEL           0.268                  7.741  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5746
+                                                                   NET DELAY          0.910                  8.651  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2250/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2250/Z
+                                          SLICE_R45C20A            CTOF_DEL           0.268                  8.919  7       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1160
+                                                                   NET DELAY          0.409                  9.328  7       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2213/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2213/Z
+                                          SLICE_R47C20B            CTOF_DEL           0.268                  9.596  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6349
+                                                                   NET DELAY          0.496                 10.092  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2276/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2276/Z
+                                          SLICE_R48C26C            CTOF_DEL           0.268                 10.360  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6386
+                                                                   NET DELAY          0.852                 11.212  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2275/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2275/Z
+                                          SLICE_R36C28C            CTOF_DEL           0.268                 11.480  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_346
+                                                                   NET DELAY          1.444                 12.924  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR8
+                                                                                      0.000                 12.924  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.924)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                                        -0.185  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR5  (EBR_CORE_EBR_CORE_R19C39)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 70.3% (route), 29.7% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -0.185 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.449                  5.862  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_55/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_55/Z
+                                          SLICE_R40C21D            CTOF_DEL           0.268                  6.130  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_353
+                                                                   NET DELAY          0.287                  6.417  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_96/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_96/Z
+                                          SLICE_R42C21A            CTOF_DEL           0.268                  6.685  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_352
+                                                                   NET DELAY          0.144                  6.829  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1044/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1044/Z
+                                          SLICE_R42C21C            CTOF_DEL           0.268                  7.097  38      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_852
+                                                                   NET DELAY          0.507                  7.604  38      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_793/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_793/Z
+                                          SLICE_R41C23D            CTOF_DEL           0.268                  7.872  18      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5704
+                                                                   NET DELAY          0.498                  8.370  18      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_514/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_514/Z
+                                          SLICE_R43C24D            CTOF_DEL           0.268                  8.638  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5744
+                                                                   NET DELAY          0.735                  9.373  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_413/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_413/Z
+                                          SLICE_R47C30C            CTOF_DEL           0.268                  9.641  4       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_809
+                                                                   NET DELAY          0.498                 10.139  4       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2264/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2264/Z
+                                          SLICE_R49C28A            CTOF_DEL           0.268                 10.407  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_4413
+                                                                   NET DELAY          0.734                 11.141  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2265/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2265/Z
+                                          SLICE_R43C31B            CTOF_DEL           0.268                 11.409  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_348
+                                                                   NET DELAY          1.515                 12.924  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR5
+                                                                                      0.000                 12.924  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.924)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                                        -0.185  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR8  (EBR_CORE_EBR_CORE_R19C42)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 69.9% (route), 30.1% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -0.053 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.144                  5.557  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/Z
+                                          SLICE_R42C23C            CTOF_DEL           0.268                  5.825  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_354
+                                                                   NET DELAY          0.352                  6.177  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_90/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_90/Z
+                                          SLICE_R42C21B            CTOF_DEL           0.268                  6.445  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_57
+                                                                   NET DELAY          0.344                  6.789  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2297/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2297/Z
+                                          SLICE_R44C21A            CTOF_DEL           0.268                  7.057  9       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_843
+                                                                   NET DELAY          0.586                  7.643  9       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2307/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2307/Z
+                                          SLICE_R45C24B            CTOF_DEL           0.268                  7.911  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5865
+                                                                   NET DELAY          0.563                  8.474  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_755/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_755/Z
+                                          SLICE_R48C25C            CTOF_DEL           0.268                  8.742  4       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5736
+                                                                   NET DELAY          0.582                  9.324  4       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2310/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2310/Z
+                                          SLICE_R42C26A            CTOF_DEL           0.268                  9.592  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6366
+                                                                   NET DELAY          0.478                 10.070  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2241/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2241/Z
+                                          SLICE_R40C25B            CTOF_DEL           0.268                 10.338  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_331
+                                                                   NET DELAY          0.442                 10.780  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2286/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2286/Z
+                                          SLICE_R38C31C            CTOF_DEL           0.268                 11.048  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_341
+                                                                   NET DELAY          1.744                 12.792  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR8
+                                                                                      0.000                 12.792  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.792)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                                        -0.053  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR9  (EBR_CORE_EBR_CORE_R19C39)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 69.3% (route), 30.6% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : 0.122 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.144                  5.557  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/Z
+                                          SLICE_R42C23C            CTOF_DEL           0.268                  5.825  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_354
+                                                                   NET DELAY          0.293                  6.118  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_85/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_85/Z
+                                          SLICE_R40C23B            CTOF_DEL           0.268                  6.386  5       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_63
+                                                                   NET DELAY          0.433                  6.819  5       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2257/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2257/Z
+                                          SLICE_R40C20C            CTOF_DEL           0.268                  7.087  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6374
+                                                                   NET DELAY          0.198                  7.285  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2258/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2258/Z
+                                          SLICE_R40C20B            CTOF_DEL           0.268                  7.553  49      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_358
+                                                                   NET DELAY          0.960                  8.513  49      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2266/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2266/Z
+                                          SLICE_R50C19B            CTOF_DEL           0.268                  8.781  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6378
+                                                                   NET DELAY          0.208                  8.989  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2267/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2267/Z
+                                          SLICE_R50C19A            CTOF_DEL           0.268                  9.257  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6375
+                                                                   NET DELAY          0.563                  9.820  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2260/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2260/Z
+                                          SLICE_R44C21D            CTOF_DEL           0.268                 10.088  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_334
+                                                                   NET DELAY          0.639                 10.727  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2256/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2256/Z
+                                          SLICE_R42C33A            CTOF_DEL           0.268                 10.995  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_345
+                                                                   NET DELAY          1.622                 12.617  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/ADR9
+                                                                                      0.000                 12.617  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5681/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.617)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                         0.122  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR9  (EBR_CORE_EBR_CORE_R19C42)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 69.2% (route), 30.8% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : 0.161 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.144                  5.557  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/Z
+                                          SLICE_R42C23C            CTOF_DEL           0.268                  5.825  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_354
+                                                                   NET DELAY          0.576                  6.401  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_88/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_88/Z
+                                          SLICE_R48C25A            CTOF_DEL           0.268                  6.669  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_59
+                                                                   NET DELAY          0.341                  7.010  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1034/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1034/Z
+                                          SLICE_R50C25C            CTOF_DEL           0.268                  7.278  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_846
+                                                                   NET DELAY          0.195                  7.473  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_939/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_939/Z
+                                          SLICE_R50C25D            CTOF_DEL           0.268                  7.741  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5746
+                                                                   NET DELAY          0.910                  8.651  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2250/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2250/Z
+                                          SLICE_R45C20A            CTOF_DEL           0.268                  8.919  7       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1160
+                                                                   NET DELAY          0.433                  9.352  7       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2248/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2248/Z
+                                          SLICE_R43C22A            CTOF_DEL           0.268                  9.620  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6373
+                                                                   NET DELAY          0.442                 10.062  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2289/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2289/Z
+                                          SLICE_R44C28C            CTOF_DEL           0.268                 10.330  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6391
+                                                                   NET DELAY          0.306                 10.636  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2290/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2290/Z
+                                          SLICE_R43C28C            CTOF_DEL           0.268                 10.904  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_340
+                                                                   NET DELAY          1.674                 12.578  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR9
+                                                                                      0.000                 12.578  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.578)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                         0.161  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q  (SLICE_R29C52B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR7  (EBR_CORE_EBR_CORE_R19C42)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 12
+Delay Ratio      : 66.5% (route), 33.5% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : 0.177 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_375/Q
+                                          SLICE_R29C52B            REG_DEL            0.385                  3.002  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_364
+                                                                   NET DELAY          1.187                  4.189  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_946/Z
+                                          SLICE_R41C32A            CTOF_DEL           0.268                  4.457  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_2193
+                                                                   NET DELAY          0.688                  5.145  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_944/Z
+                                          SLICE_R42C23A            CTOF_DEL           0.268                  5.413  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1001
+                                                                   NET DELAY          0.144                  5.557  11      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2280/Z
+                                          SLICE_R42C23C            CTOF_DEL           0.268                  5.825  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_354
+                                                                   NET DELAY          0.576                  6.401  14      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_88/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_88/Z
+                                          SLICE_R48C25A            CTOF_DEL           0.268                  6.669  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_59
+                                                                   NET DELAY          0.341                  7.010  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1034/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1034/Z
+                                          SLICE_R50C25C            CTOF_DEL           0.268                  7.278  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_846
+                                                                   NET DELAY          0.195                  7.473  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_939/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_939/Z
+                                          SLICE_R50C25D            CTOF_DEL           0.268                  7.741  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5746
+                                                                   NET DELAY          0.898                  8.639  10      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_658/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_658/Z
+                                          SLICE_R38C22B            CTOF_DEL           0.268                  8.907  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5761
+                                                                   NET DELAY          0.144                  9.051  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_485/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_485/Z
+                                          SLICE_R38C22C            CTOF_DEL           0.268                  9.319  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_4776
+                                                                   NET DELAY          0.341                  9.660  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_122/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_122/Z
+                                          SLICE_R38C24C            CTOF_DEL           0.268                  9.928  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_858
+                                                                   NET DELAY          0.510                 10.438  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_302/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_302/Z
+                                          SLICE_R36C30B            CTOF_DEL           0.268                 10.706  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_3944
+                                                                   NET DELAY          0.144                 10.850  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_223/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_223/Z
+                                          SLICE_R36C30C            CTOF_DEL           0.268                 11.118  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_342
+                                                                   NET DELAY          1.444                 12.562  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/ADR7
+                                                                                      0.000                 12.562  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5682/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.562)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                         0.177  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5471/Q  (SLICE_R45C43D)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_381/ADR10  (EBR_CORE_EBR_CORE_R37C27)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 11
+Delay Ratio      : 66.5% (route), 33.5% (logic)
+Clock Skew       : 0.106 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : 0.382 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                  2.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                  2.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                 -0.124  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.741                  2.617  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5471/CLK
+                                                                                      0.000                  2.617  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5471/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5471/Q
+                                          SLICE_R45C43D            REG_DEL            0.385                  3.002  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_859
+                                                                   NET DELAY          1.322                  4.324  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1981/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1981/Z
+                                          SLICE_R30C52A            CTOF_DEL           0.268                  4.592  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6223
+                                                                   NET DELAY          0.144                  4.736  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1597/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1597/Z
+                                          SLICE_R30C52C            CTOF_DEL           0.268                  5.004  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5998
+                                                                   NET DELAY          0.502                  5.506  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1381/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1381/Z
+                                          SLICE_R36C51A            CTOF_DEL           0.268                  5.774  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5984
+                                                                   NET DELAY          0.208                  5.982  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1197/A->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_1197/Z
+                                          SLICE_R36C51B            CTOF_DEL           0.268                  6.250  50      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_1294
+                                                                   NET DELAY          0.847                  7.097  50      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_337/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_instance_58_337/Z
+                                          SLICE_R49C51C            CTOF_DEL           0.268                  7.365  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2766/secured_signal_58_324
+                                                                   NET DELAY          1.029                  8.394  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2659/A0->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2659/COUT
+                                          SLICE_R39C46C            C0TOFCO_DEL        0.397                  8.791  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_6722
+                                                                   NET DELAY          0.000                  8.791  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2658/CIN->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2658/S0
+                                          SLICE_R39C46D            FCITOF0_DEL        0.264                  9.055  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_5834
+                                                                   NET DELAY          0.605                  9.660  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_671/D->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_671/Z
+                                          SLICE_R42C40D            CTOF_DEL           0.268                  9.928  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_1623
+                                                                   NET DELAY          0.341                 10.269  1       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_503/C->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_503/Z
+                                          SLICE_R42C38C            CTOF_DEL           0.268                 10.537  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_1666
+                                                                   NET DELAY          0.357                 10.894  2       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_3325/B->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_3325/Z
+                                          SLICE_R43C38D            CTOOF_DEL          0.341                 11.235  8       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_signal_57_308
+                                                                   NET DELAY          1.122                 12.357  8       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_381/ADR10
+                                                                                      0.000                 12.357  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+                                                                   CONSTRAINT         0.000                 10.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY          2.855                 12.855  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                            0.000                 12.855  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                           -2.979                  9.876  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY          2.847                 12.723  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_2765/secured_instance_57_381/CLK
+                                                                                      0.000                 12.723  1       
+                                                                   Uncertainty     -(0.000)                 12.723  
+                                                                   Setup time     -(-0.016)                 12.739  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                               12.739  
+Arrival Time                                                                                             -(12.357)  
+----------------------------------------  -----------------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Passed)                                                                                         0.382  
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+
+
+===============================================================
+3  Hold at Speed Grade m Corner at 0 Degrees
+===============================================================
+
+3.1  Endpoint slacks
+=======================
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+cpu0_inst/riscvrtos_inst/secured_instance_77_5/secured_instance_62_438/secured_instance_61_0/secured_instance_60_0/DF              
+                                         |   -0.079 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5615/WD1              
+                                         |    0.104 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5618/WD3              
+                                         |    0.110 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WAD0              
+                                         |    0.110 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5612/WAD0              
+                                         |    0.144 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5624/WAD1              
+                                         |    0.148 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WD0              
+                                         |    0.150 ns 
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5627/WAD0              
+                                         |    0.152 ns 
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_68/DF              
+                                         |    0.162 ns 
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_54/DF              
+                                         |    0.162 ns 
+-------------------------------------------------------
+                                         |             
+Hold # of endpoints with negative slack: |           1 
+                                         |             
+-------------------------------------------------------
+
+3.2  Detailed Report
+=======================
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : osc0_inst/lscc_osc_inst/OSCA.u_OSC.OSCA_inst/LFCLKOUT  (OSC_CORE_OSC_CORE_R1C59)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_5/secured_instance_62_438/secured_instance_61_0/secured_instance_60_0/DF  (SLICE_R31C5D)
+Source Clock     : osc0_inst_lf_clk_out_o (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 100.0% (route), 0.0% (logic)
+Clock Skew       : 1.471 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : -0.079 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/LFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_5/secured_instance_62_438/secured_instance_61_0/secured_signal_60_2
+                                          OSC_CORE_OSC_CORE_R1C59                  0.000                  0.000  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_5/secured_instance_62_438/secured_instance_61_0/secured_signal_60_2
+                                                                   NET DELAY       1.486                  1.486  3       
+cpu0_inst/riscvrtos_inst/secured_instance_77_5/secured_instance_62_438/secured_instance_61_0/secured_instance_60_0/DF
+                                                                                   0.000                  1.486  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_5/secured_instance_62_438/secured_instance_61_0/secured_instance_60_0/CLK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.094                  1.565  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.565  
+Arrival Time                                                                                              1.486  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Failed)                                                                                     -0.079  
+
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4120/Q  (SLICE_R31C55B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5615/WD1  (SLICE_R31C56C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 40.3% (route), 59.7% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.104 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4120/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4120/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4120/Q
+                                          SLICE_R31C55B            REG_DEL         0.178                  1.649  5       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_472
+                                                                   NET DELAY       0.120                  1.769  5       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5615/WD1
+                                                                                   0.000                  1.769  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5615/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.194                  1.665  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.665  
+Arrival Time                                                                                              1.769  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.104  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4118/Q  (SLICE_R31C54B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5618/WD3  (SLICE_R30C54C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 41.4% (route), 58.6% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.110 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4118/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4118/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4118/Q
+                                          SLICE_R31C54B            REG_DEL         0.178                  1.649  6       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_474
+                                                                   NET DELAY       0.126                  1.775  6       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5618/WD3
+                                                                                   0.000                  1.775  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5618/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.194                  1.665  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.665  
+Arrival Time                                                                                              1.775  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.110  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/Q  (SLICE_R30C57B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WAD0  (SLICE_R32C57C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 44.4% (route), 55.6% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.110 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/Q
+                                          SLICE_R30C57B            REG_DEL         0.178                  1.649  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_963
+                                                                   NET DELAY       0.142                  1.791  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WAD0
+                                                                                   0.000                  1.791  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.210                  1.681  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.681  
+Arrival Time                                                                                              1.791  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.110  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/Q  (SLICE_R30C57B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5612/WAD0  (SLICE_R31C57C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 49.7% (route), 50.3% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.144 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/Q
+                                          SLICE_R30C57B            REG_DEL         0.178                  1.649  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_963
+                                                                   NET DELAY       0.176                  1.825  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5612/WAD0
+                                                                                   0.000                  1.825  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5612/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.210                  1.681  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.681  
+Arrival Time                                                                                              1.825  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.144  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4135/Q  (SLICE_R30C50B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5624/WAD1  (SLICE_R32C50C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 50.3% (route), 49.7% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.148 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4135/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4135/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4135/Q
+                                          SLICE_R30C50B            REG_DEL         0.178                  1.649  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_962
+                                                                   NET DELAY       0.180                  1.829  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5624/WAD1
+                                                                                   0.000                  1.829  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5624/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.210                  1.681  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.681  
+Arrival Time                                                                                              1.829  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.148  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4127/Q  (SLICE_R34C57D)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WD0  (SLICE_R32C57C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 48.3% (route), 51.7% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.150 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4127/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4127/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4127/Q
+                                          SLICE_R34C57D            REG_DEL         0.178                  1.649  6       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_460
+                                                                   NET DELAY       0.166                  1.815  6       
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WD0
+                                                                                   0.000                  1.815  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5609/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.194                  1.665  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.665  
+Arrival Time                                                                                              1.815  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.150  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/Q  (SLICE_R30C57B)
+Path End         : cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5627/WAD0  (SLICE_R32C51C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 50.8% (route), 49.2% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.152 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/CLK->cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_4134/Q
+                                          SLICE_R30C57B            REG_DEL         0.178                  1.649  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_signal_59_963
+                                                                   NET DELAY       0.184                  1.833  16      
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5627/WAD0
+                                                                                   0.000                  1.833  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+cpu0_inst/riscvrtos_inst/secured_instance_77_4/secured_instance_59_5627/WCK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.210                  1.681  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.681  
+Arrival Time                                                                                              1.833  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.152  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_48/Q  (SLICE_R13C11B)
+Path End         : axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_68/DF  (SLICE_R13C11C)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 33.2% (route), 66.8% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.162 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_48/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_48/CLK->axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_48/Q
+                                          SLICE_R13C11B            REG_DEL         0.173                  1.644  9       
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_52
+                                                                   NET DELAY       0.086                  1.730  9       
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_68/DF
+                                                                                   0.000                  1.730  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_68/CLK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.097                  1.568  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.568  
+Arrival Time                                                                                              1.730  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.162  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : axi1x2_inst/axi_crossbarNxM_inst/axi_crossbar_inst/secured_instance_28_1/secured_instance_17_47/secured_instance_15_35/Q  (SLICE_R18C11D)
+Path End         : axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_54/DF  (SLICE_R18C11B)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 33.2% (route), 66.8% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.162 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+axi1x2_inst/axi_crossbarNxM_inst/axi_crossbar_inst/secured_instance_28_1/secured_instance_17_47/secured_instance_15_35/CLK
+                                                                                   0.000                  1.471  1       
+
+
+Data Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+axi1x2_inst/axi_crossbarNxM_inst/axi_crossbar_inst/secured_instance_28_1/secured_instance_17_47/secured_instance_15_35/CLK->axi1x2_inst/axi_crossbarNxM_inst/axi_crossbar_inst/secured_instance_28_1/secured_instance_17_47/secured_instance_15_35/Q
+                                          SLICE_R18C11D            REG_DEL         0.173                  1.644  1       
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_30
+                                                                   NET DELAY       0.086                  1.730  1       
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_54/DF
+                                                                                   0.000                  1.730  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name           Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+                                                                   CONSTRAINT      0.000                  0.000  1       
+osc0_inst.lscc_osc_inst.OSCA.u_OSC.OSCA_inst/HFCLKOUT
+                                          OSC_CORE_OSC_CORE_R1C59  CLOCK LATENCY   0.000                  0.000  3       
+osc0_inst/lscc_osc_inst/hf_clk_out_o                               NET DELAY       1.560                  1.560  3       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE_PLL_ULC                         0.000                  1.560  4230    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE_PLL_ULC                        -1.624                 -0.064  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_signal_0_45
+                                                                   NET DELAY       1.535                  1.471  4230    
+axi1x2_inst/axi2axil_M01_inst/secured_instance_3_0/secured_instance_2_0/secured_instance_0_54/CLK
+                                                                                   0.000                  1.471  1       
+                                                                   Uncertainty     0.000                  1.471  
+                                                                   Hold time       0.097                  1.568  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                            -1.568  
+Arrival Time                                                                                              1.730  
+----------------------------------------  -----------------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                                      0.162  
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+
+

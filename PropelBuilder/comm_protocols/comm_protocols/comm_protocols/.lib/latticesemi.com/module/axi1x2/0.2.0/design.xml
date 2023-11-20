@@ -1,0 +1,1284 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>axi_hier_design</ipxact:name>
+    <ipxact:version>0.2.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M00_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M00" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M01_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M01" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M02_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M02" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M03_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M03" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M04_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M04" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M05_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M05" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M06_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M06" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M07_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M07" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M08_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M08" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi2axil_M09_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi2axil_M09" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi_crossbarNxM_inst</ipxact:instanceName>
+            <ipxact:isPresent>1</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="axi_crossbarNxM" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="S_COUNT">1</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="M_COUNT">2</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M00_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M00 || EN_M00)  &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M00" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M01_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M01 || EN_M01)  &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M01" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M02_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M02 || EN_M02)  &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M02" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M03_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M03 || EN_M03)  &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M03" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M04_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M04 || EN_M04)  &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M04" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M05_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M05 || EN_M05)  &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M05" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M06_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M06 || EN_M06)  &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M06" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M07_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M07 || EN_M07)  &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M07" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M08_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M08 || EN_M08)  &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M08" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>cdc_M09_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M09 || EN_M09)  &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="cdc_M09" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M00_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M00 || EN_M00)  &amp;&amp; ENABLE_M00_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M00" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M01_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M01 || EN_M01)  &amp;&amp; ENABLE_M01_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M01" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M02_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M02 || EN_M02)  &amp;&amp; ENABLE_M02_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M02" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M03_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M03 || EN_M03)  &amp;&amp; ENABLE_M03_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M03" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M04_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M04 || EN_M04)  &amp;&amp; ENABLE_M04_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M04" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M05_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M05 || EN_M05)  &amp;&amp; ENABLE_M05_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M05" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M06_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M06 || EN_M06)  &amp;&amp; ENABLE_M06_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M06" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M07_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M07 || EN_M07)  &amp;&amp; ENABLE_M07_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M07" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M08_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M08 || EN_M08)  &amp;&amp; ENABLE_M08_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M08" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_M09_inst</ipxact:instanceName>
+            <ipxact:isPresent>(EN_LITE_M09 || EN_M09)  &amp;&amp; ENABLE_M09_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_M09" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_S00_inst</ipxact:instanceName>
+            <ipxact:isPresent>EN_S00  &amp;&amp; ENABLE_S00_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_S00" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_S01_inst</ipxact:instanceName>
+            <ipxact:isPresent>EN_S01  &amp;&amp; ENABLE_S01_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_S01" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_S02_inst</ipxact:instanceName>
+            <ipxact:isPresent>EN_S02  &amp;&amp; ENABLE_S02_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_S02" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_S03_inst</ipxact:instanceName>
+            <ipxact:isPresent>EN_S03  &amp;&amp; ENABLE_S03_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_S03" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>reg_slice_S04_inst</ipxact:instanceName>
+            <ipxact:isPresent>EN_S04  &amp;&amp; ENABLE_S04_REG_SLICE</ipxact:isPresent>
+            <ipxact:componentRef library="module" name="reg_slice_S04" vendor="latticesemi.com" version="0.1.0">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:interconnections>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M00_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M00 || EN_LITE_M00) &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M00_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M00"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M01_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M01 || EN_LITE_M01) &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M01_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M01"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M02_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M02 || EN_LITE_M02) &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M02_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M02"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M03_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M03 || EN_LITE_M03) &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M03_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M03"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M04_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M04 || EN_LITE_M04) &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M04_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M04"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M05_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M05 || EN_LITE_M05) &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M05_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M05"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M06_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M06 || EN_LITE_M06) &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M06_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M06"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M07_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M07 || EN_LITE_M07) &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M07_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M07"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M08_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M08 || EN_LITE_M08) &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M08_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M08"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi2axil_M09_inst_AXIL_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M09 || EN_LITE_M09) &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXIL_M00" componentRef="axi2axil_M09_inst"/>
+            <ipxact:hierInterface busRef="AXIL_M09"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M00 || EN_LITE_M00</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M00_inst">
+                <ipxact:isPresent>ENABLE_M00_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M00_inst">
+                <ipxact:isPresent>!ENABLE_M00_REG_SLICE &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M00_inst">
+                <ipxact:isPresent>!ENABLE_M00_REG_SLICE &amp;&amp; !ENABLE_M00_CDC &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M00">
+                <ipxact:isPresent>!ENABLE_M00_REG_SLICE &amp;&amp; !ENABLE_M00_CDC &amp;&amp; !ENABLE_M00_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M01_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M01 || EN_LITE_M01</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M01" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M01_inst">
+                <ipxact:isPresent>ENABLE_M01_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M01_inst">
+                <ipxact:isPresent>!ENABLE_M01_REG_SLICE &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M01_inst">
+                <ipxact:isPresent>!ENABLE_M01_REG_SLICE &amp;&amp; !ENABLE_M01_CDC &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M01">
+                <ipxact:isPresent>!ENABLE_M01_REG_SLICE &amp;&amp; !ENABLE_M01_CDC &amp;&amp; !ENABLE_M01_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M02_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M02 || EN_LITE_M02</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M02" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M02_inst">
+                <ipxact:isPresent>ENABLE_M02_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M02_inst">
+                <ipxact:isPresent>!ENABLE_M02_REG_SLICE &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M02_inst">
+                <ipxact:isPresent>!ENABLE_M02_REG_SLICE &amp;&amp; !ENABLE_M02_CDC &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M02">
+                <ipxact:isPresent>!ENABLE_M02_REG_SLICE &amp;&amp; !ENABLE_M02_CDC &amp;&amp; !ENABLE_M02_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M03_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M03 || EN_LITE_M03</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M03" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M03_inst">
+                <ipxact:isPresent>ENABLE_M03_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M03_inst">
+                <ipxact:isPresent>!ENABLE_M03_REG_SLICE &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M03_inst">
+                <ipxact:isPresent>!ENABLE_M03_REG_SLICE &amp;&amp; !ENABLE_M03_CDC &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M03">
+                <ipxact:isPresent>!ENABLE_M03_REG_SLICE &amp;&amp; !ENABLE_M03_CDC &amp;&amp; !ENABLE_M03_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M04_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M04 || EN_LITE_M04</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M04" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M04_inst">
+                <ipxact:isPresent>ENABLE_M04_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M04_inst">
+                <ipxact:isPresent>!ENABLE_M04_REG_SLICE &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M04_inst">
+                <ipxact:isPresent>!ENABLE_M04_REG_SLICE &amp;&amp; !ENABLE_M04_CDC &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M04">
+                <ipxact:isPresent>!ENABLE_M04_REG_SLICE &amp;&amp; !ENABLE_M04_CDC &amp;&amp; !ENABLE_M04_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M05_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M05 || EN_LITE_M05</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M05" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M05_inst">
+                <ipxact:isPresent>ENABLE_M05_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M05_inst">
+                <ipxact:isPresent>!ENABLE_M05_REG_SLICE &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M05_inst">
+                <ipxact:isPresent>!ENABLE_M05_REG_SLICE &amp;&amp; !ENABLE_M05_CDC &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M05">
+                <ipxact:isPresent>!ENABLE_M05_REG_SLICE &amp;&amp; !ENABLE_M05_CDC &amp;&amp; !ENABLE_M05_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M06_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M06 || EN_LITE_M06</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M06" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M06_inst">
+                <ipxact:isPresent>ENABLE_M06_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M06_inst">
+                <ipxact:isPresent>!ENABLE_M06_REG_SLICE &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M06_inst">
+                <ipxact:isPresent>!ENABLE_M06_REG_SLICE &amp;&amp; !ENABLE_M06_CDC &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M06">
+                <ipxact:isPresent>!ENABLE_M06_REG_SLICE &amp;&amp; !ENABLE_M06_CDC &amp;&amp; !ENABLE_M06_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M07_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M07 || EN_LITE_M07</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M07" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M07_inst">
+                <ipxact:isPresent>ENABLE_M07_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M07_inst">
+                <ipxact:isPresent>!ENABLE_M07_REG_SLICE &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M07_inst">
+                <ipxact:isPresent>!ENABLE_M07_REG_SLICE &amp;&amp; !ENABLE_M07_CDC &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M07">
+                <ipxact:isPresent>!ENABLE_M07_REG_SLICE &amp;&amp; !ENABLE_M07_CDC &amp;&amp; !ENABLE_M07_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M08_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M08 || EN_LITE_M08</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M08" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M08_inst">
+                <ipxact:isPresent>ENABLE_M08_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M08_inst">
+                <ipxact:isPresent>!ENABLE_M08_REG_SLICE &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M08_inst">
+                <ipxact:isPresent>!ENABLE_M08_REG_SLICE &amp;&amp; !ENABLE_M08_CDC &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M08">
+                <ipxact:isPresent>!ENABLE_M08_REG_SLICE &amp;&amp; !ENABLE_M08_CDC &amp;&amp; !ENABLE_M08_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>axi_crossbarNxM_inst_AXI_M09_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_M09 || EN_LITE_M09</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M09" componentRef="axi_crossbarNxM_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_M09_inst">
+                <ipxact:isPresent>ENABLE_M09_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M09_inst">
+                <ipxact:isPresent>!ENABLE_M09_REG_SLICE &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M09_inst">
+                <ipxact:isPresent>!ENABLE_M09_REG_SLICE &amp;&amp; !ENABLE_M09_CDC &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M09">
+                <ipxact:isPresent>!ENABLE_M09_REG_SLICE &amp;&amp; !ENABLE_M09_CDC &amp;&amp; !ENABLE_M09_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M00_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M00 || EN_LITE_M00) &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M00_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M00_inst">
+                <ipxact:isPresent>ENABLE_M00_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M00">
+                <ipxact:isPresent>!ENABLE_M00_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M01_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M01 || EN_LITE_M01) &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M01_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M01_inst">
+                <ipxact:isPresent>ENABLE_M01_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M01">
+                <ipxact:isPresent>!ENABLE_M01_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M02_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M02 || EN_LITE_M02) &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M02_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M02_inst">
+                <ipxact:isPresent>ENABLE_M02_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M02">
+                <ipxact:isPresent>!ENABLE_M02_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M03_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M03 || EN_LITE_M03) &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M03_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M03_inst">
+                <ipxact:isPresent>ENABLE_M03_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M03">
+                <ipxact:isPresent>!ENABLE_M03_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M04_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M04 || EN_LITE_M04) &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M04_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M04_inst">
+                <ipxact:isPresent>ENABLE_M04_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M04">
+                <ipxact:isPresent>!ENABLE_M04_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M05_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M05 || EN_LITE_M05) &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M05_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M05_inst">
+                <ipxact:isPresent>ENABLE_M05_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M05">
+                <ipxact:isPresent>!ENABLE_M05_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M06_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M06 || EN_LITE_M06) &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M06_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M06_inst">
+                <ipxact:isPresent>ENABLE_M06_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M06">
+                <ipxact:isPresent>!ENABLE_M06_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M07_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M07 || EN_LITE_M07) &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M07_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M07_inst">
+                <ipxact:isPresent>ENABLE_M07_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M07">
+                <ipxact:isPresent>!ENABLE_M07_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M08_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M08 || EN_LITE_M08) &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M08_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M08_inst">
+                <ipxact:isPresent>ENABLE_M08_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M08">
+                <ipxact:isPresent>!ENABLE_M08_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>cdc_M09_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M09 || EN_LITE_M09) &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="cdc_M09_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M09_inst">
+                <ipxact:isPresent>ENABLE_M09_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M09">
+                <ipxact:isPresent>!ENABLE_M09_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M00_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M00 || EN_LITE_M00) &amp;&amp; ENABLE_M00_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M00_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M00_inst">
+                <ipxact:isPresent>ENABLE_M00_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M00_inst">
+                <ipxact:isPresent>!ENABLE_M00_CDC &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M00">
+                <ipxact:isPresent>!ENABLE_M00_CDC &amp;&amp; !ENABLE_M00_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M01_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M01 || EN_LITE_M01) &amp;&amp; ENABLE_M01_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M01_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M01_inst">
+                <ipxact:isPresent>ENABLE_M01_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M01_inst">
+                <ipxact:isPresent>!ENABLE_M01_CDC &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M01">
+                <ipxact:isPresent>!ENABLE_M01_CDC &amp;&amp; !ENABLE_M01_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M02_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M02 || EN_LITE_M02) &amp;&amp; ENABLE_M02_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M02_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M02_inst">
+                <ipxact:isPresent>ENABLE_M02_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M02_inst">
+                <ipxact:isPresent>!ENABLE_M02_CDC &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M02">
+                <ipxact:isPresent>!ENABLE_M02_CDC &amp;&amp; !ENABLE_M02_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M03_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M03 || EN_LITE_M03) &amp;&amp; ENABLE_M03_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M03_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M03_inst">
+                <ipxact:isPresent>ENABLE_M03_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M03_inst">
+                <ipxact:isPresent>!ENABLE_M03_CDC &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M03">
+                <ipxact:isPresent>!ENABLE_M03_CDC &amp;&amp; !ENABLE_M03_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M04_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M04 || EN_LITE_M04) &amp;&amp; ENABLE_M04_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M04_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M04_inst">
+                <ipxact:isPresent>ENABLE_M04_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M04_inst">
+                <ipxact:isPresent>!ENABLE_M04_CDC &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M04">
+                <ipxact:isPresent>!ENABLE_M04_CDC &amp;&amp; !ENABLE_M04_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M05_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M05 || EN_LITE_M05) &amp;&amp; ENABLE_M05_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M05_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M05_inst">
+                <ipxact:isPresent>ENABLE_M05_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M05_inst">
+                <ipxact:isPresent>!ENABLE_M05_CDC &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M05">
+                <ipxact:isPresent>!ENABLE_M05_CDC &amp;&amp; !ENABLE_M05_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M06_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M06 || EN_LITE_M06) &amp;&amp; ENABLE_M06_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M06_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M06_inst">
+                <ipxact:isPresent>ENABLE_M06_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M06_inst">
+                <ipxact:isPresent>!ENABLE_M06_CDC &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M06">
+                <ipxact:isPresent>!ENABLE_M06_CDC &amp;&amp; !ENABLE_M06_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M07_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M07 || EN_LITE_M07) &amp;&amp; ENABLE_M07_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M07_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M07_inst">
+                <ipxact:isPresent>ENABLE_M07_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M07_inst">
+                <ipxact:isPresent>!ENABLE_M07_CDC &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M07">
+                <ipxact:isPresent>!ENABLE_M07_CDC &amp;&amp; !ENABLE_M07_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M08_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M08 || EN_LITE_M08) &amp;&amp; ENABLE_M08_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M08_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M08_inst">
+                <ipxact:isPresent>ENABLE_M08_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M08_inst">
+                <ipxact:isPresent>!ENABLE_M08_CDC &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M08">
+                <ipxact:isPresent>!ENABLE_M08_CDC &amp;&amp; !ENABLE_M08_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_M09_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>(EN_M09 || EN_LITE_M09) &amp;&amp; ENABLE_M09_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_M09_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="cdc_M09_inst">
+                <ipxact:isPresent>ENABLE_M09_CDC</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi2axil_M09_inst">
+                <ipxact:isPresent>!ENABLE_M09_CDC &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_M09">
+                <ipxact:isPresent>!ENABLE_M09_CDC &amp;&amp; !ENABLE_M09_2_LITE</ipxact:isPresent>
+            </ipxact:hierInterface>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S00_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S00 &amp;&amp; ENABLE_S00_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_S00_inst"/>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi_crossbarNxM_inst"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S00_inst_AXI_S00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S00</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_S00_inst">
+                <ipxact:isPresent>EN_S00 &amp;&amp; ENABLE_S00_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="axi_crossbarNxM_inst">
+                <ipxact:isPresent>! (EN_S00 &amp;&amp; ENABLE_S00_REG_SLICE)</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_S00"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S01_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S01 &amp;&amp; ENABLE_S01_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_S01_inst"/>
+            <ipxact:activeInterface busRef="AXI_S01" componentRef="axi_crossbarNxM_inst"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S01_inst_AXI_S00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S01</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_S01_inst">
+                <ipxact:isPresent>EN_S01 &amp;&amp; ENABLE_S01_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S01" componentRef="axi_crossbarNxM_inst">
+                <ipxact:isPresent>! (EN_S01 &amp;&amp; ENABLE_S01_REG_SLICE)</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_S01"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S02_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S02 &amp;&amp; ENABLE_S02_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_S02_inst"/>
+            <ipxact:activeInterface busRef="AXI_S02" componentRef="axi_crossbarNxM_inst"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S02_inst_AXI_S00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S02</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_S02_inst">
+                <ipxact:isPresent>EN_S02 &amp;&amp; ENABLE_S02_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S02" componentRef="axi_crossbarNxM_inst">
+                <ipxact:isPresent>! (EN_S02 &amp;&amp; ENABLE_S02_REG_SLICE)</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_S02"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S03_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S03 &amp;&amp; ENABLE_S03_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_S03_inst"/>
+            <ipxact:activeInterface busRef="AXI_S03" componentRef="axi_crossbarNxM_inst"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S03_inst_AXI_S00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S03</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_S03_inst">
+                <ipxact:isPresent>EN_S03 &amp;&amp; ENABLE_S03_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S03" componentRef="axi_crossbarNxM_inst">
+                <ipxact:isPresent>! (EN_S03 &amp;&amp; ENABLE_S03_REG_SLICE)</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_S03"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S04_inst_AXI_M00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S04 &amp;&amp; ENABLE_S04_REG_SLICE</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_M00" componentRef="reg_slice_S04_inst"/>
+            <ipxact:activeInterface busRef="AXI_S04" componentRef="axi_crossbarNxM_inst"/>
+        </ipxact:interconnection>
+        <ipxact:interconnection>
+            <ipxact:name>reg_slice_S04_inst_AXI_S00_interconnect</ipxact:name>
+            <ipxact:isPresent>EN_S04</ipxact:isPresent>
+            <ipxact:activeInterface busRef="AXI_S00" componentRef="reg_slice_S04_inst">
+                <ipxact:isPresent>EN_S04 &amp;&amp; ENABLE_S04_REG_SLICE</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:activeInterface busRef="AXI_S04" componentRef="axi_crossbarNxM_inst">
+                <ipxact:isPresent>! (EN_S04 &amp;&amp; ENABLE_S04_REG_SLICE)</ipxact:isPresent>
+            </ipxact:activeInterface>
+            <ipxact:hierInterface busRef="AXI_S04"/>
+        </ipxact:interconnection>
+    </ipxact:interconnections>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M00_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M00_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M00_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M00 &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M00"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M01_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M01_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M01_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M01 &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M01"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M02_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M02_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M02_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M02 &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M02"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M03_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M03_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M03_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M03 &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M03"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M04_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M04_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M04_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M04 &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M04"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M05_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M05_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M05_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M05 &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M05"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M06_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M06_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M06_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M06 &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M06"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M07_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M07_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M07_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M07 &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M07"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M08_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M08_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M08_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M08 &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M08"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_cdc_M09_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M09_inst" portRef="M_AXI_ACLK"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M09_inst" portRef="clk">
+                    <ipxact:isPresent>EN_LITE_M09 &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_cdc_M09"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_clk_i_net</ipxact:name>
+            <ipxact:displayName>buf_clk_i_net</ipxact:displayName>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="reg_slice_S00_inst" portRef="clk">
+                    <ipxact:isPresent>EN_S00 &amp;&amp; ENABLE_S00_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S01_inst" portRef="clk">
+                    <ipxact:isPresent>EN_S01 &amp;&amp; ENABLE_S01_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S02_inst" portRef="clk">
+                    <ipxact:isPresent>EN_S02 &amp;&amp; ENABLE_S02_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S03_inst" portRef="clk">
+                    <ipxact:isPresent>EN_S03 &amp;&amp; ENABLE_S03_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S04_inst" portRef="clk">
+                    <ipxact:isPresent>EN_S04 &amp;&amp; ENABLE_S04_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi_crossbarNxM_inst" portRef="clk"/>
+                <ipxact:internalPortReference componentRef="reg_slice_M00_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M01_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M02_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M03_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M04_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M05_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M06_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M07_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M08_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M09_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M00_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M01_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M02_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M03_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M04_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M05_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M06_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M07_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M08_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M09_inst" portRef="S_AXI_ACLK">
+                    <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M00_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; !ENABLE_M00_CDC &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M01_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; !ENABLE_M01_CDC &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M02_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; !ENABLE_M02_CDC &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M03_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; !ENABLE_M03_CDC &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M04_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; !ENABLE_M04_CDC &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M05_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; !ENABLE_M05_CDC &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M06_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; !ENABLE_M06_CDC &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M07_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; !ENABLE_M07_CDC &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M08_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; !ENABLE_M08_CDC &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M09_inst" portRef="clk">
+                    <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; !ENABLE_M09_CDC &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>buf_rstn_i_net</ipxact:name>
+            <ipxact:displayName>buf_rstn_i_net</ipxact:displayName>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="reg_slice_S00_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_S00 &amp;&amp; ENABLE_S00_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S01_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_S01 &amp;&amp; ENABLE_S01_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S02_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_S02 &amp;&amp; ENABLE_S02_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S03_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_S03 &amp;&amp; ENABLE_S03_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_S04_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_S04 &amp;&amp; ENABLE_S04_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi_crossbarNxM_inst" portRef="rst_n"/>
+                <ipxact:internalPortReference componentRef="reg_slice_M00_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M01_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M02_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M03_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M04_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M05_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M06_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M07_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M08_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="reg_slice_M09_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_REG_SLICE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M00_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M01_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M02_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M03_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M04_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M05_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M06_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M07_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M08_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="cdc_M09_inst" portRef="S_AXI_ARESETN">
+                    <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M00_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; !ENABLE_M00_CDC &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M01_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; !ENABLE_M01_CDC &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M02_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; !ENABLE_M02_CDC &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M03_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; !ENABLE_M03_CDC &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M04_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; !ENABLE_M04_CDC &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M05_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; !ENABLE_M05_CDC &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M06_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; !ENABLE_M06_CDC &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M07_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; !ENABLE_M07_CDC &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M08_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; !ENABLE_M08_CDC &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:internalPortReference componentRef="axi2axil_M09_inst" portRef="rst_n">
+                    <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; !ENABLE_M09_CDC &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rstn_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M00_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M00 || EN_M00) &amp;&amp; ENABLE_M00_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M00_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M00_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M00 &amp;&amp; ENABLE_M00_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M00"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M01_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M01 || EN_M01) &amp;&amp; ENABLE_M01_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M01_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M01_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M01 &amp;&amp; ENABLE_M01_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M01"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M02_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M02 || EN_M02) &amp;&amp; ENABLE_M02_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M02_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M02_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M02 &amp;&amp; ENABLE_M02_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M02"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M03_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M03 || EN_M03) &amp;&amp; ENABLE_M03_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M03_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M03_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M03 &amp;&amp; ENABLE_M03_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M03"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M04_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M04 || EN_M04) &amp;&amp; ENABLE_M04_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M04_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M04_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M04 &amp;&amp; ENABLE_M04_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M04"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M05_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M05 || EN_M05) &amp;&amp; ENABLE_M05_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M05_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M05_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M05 &amp;&amp; ENABLE_M05_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M05"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M06_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M06 || EN_M06) &amp;&amp; ENABLE_M06_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M06_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M06_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M06 &amp;&amp; ENABLE_M06_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M06"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M07_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M07 || EN_M07) &amp;&amp; ENABLE_M07_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M07_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M07_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M07 &amp;&amp; ENABLE_M07_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M07"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M08_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M08 || EN_M08) &amp;&amp; ENABLE_M08_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M08_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M08_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M08 &amp;&amp; ENABLE_M08_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M08"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>cdc_M09_inst_M_AXI_ARESETN_net</ipxact:name>
+            <ipxact:isPresent>(EN_LITE_M09 || EN_M09) &amp;&amp; ENABLE_M09_CDC</ipxact:isPresent>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="cdc_M09_inst" portRef="M_AXI_ARESETN"/>
+                <ipxact:internalPortReference componentRef="axi2axil_M09_inst" portRef="rst_n">
+                    <ipxact:isPresent>EN_LITE_M09 &amp;&amp; ENABLE_M09_2_LITE</ipxact:isPresent>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="rst_cdc_M09"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+    <ipxact:vendorExtensions>
+        <lsccip:libSearchPath>
+            <lsccip:libPath>lib</lsccip:libPath>
+        </lsccip:libSearchPath>
+    </ipxact:vendorExtensions>
+</ipxact:design>

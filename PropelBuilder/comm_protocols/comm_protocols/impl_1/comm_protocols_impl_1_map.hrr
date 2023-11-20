@@ -1,0 +1,1336 @@
+---------------------------------------------------
+Report for cell comm_protocols
+   Instance path: comm_protocols
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       7518        100.0
+                               LUTGATE	       5994        100.0
+                                LUTRAM	         48        100.0
+                                LUTCCU	       1476        100.0
+                                 IOREG	         17        100.0
+                                 IOBUF	         19        100.0
+                                PFUREG	       4439        100.0
+                                   EBR	         52        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     axi1x2_Z13_layer0	          1         8.2
+                             axil2apb0	          1         0.5
+                             axil2apb1	          1         0.6
+                  cpu0_1s_0_1s_2097152	          1        79.7
+                                  osc0	          1         0.0
+                                  pll0	          1         0.0
+                           s0_apb_gpio	          1         2.7
+                           s1_apb_uart	          1         3.5
+                       system0_system0	          1         2.6
+                            tcm0_1.3.9	          1         2.2
+---------------------------------------------------
+Report for cell axi1x2_Z13_layer0
+   Instance path: comm_protocols/axi1x2_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        615         8.2
+                               LUTGATE	        497         8.3
+                                LUTCCU	        118         8.0
+                                PFUREG	        419         9.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+             axi_crossbarNxM_12_layer0	          1         5.4
+                      secured_design_1	          1         1.4
+                      secured_design_5	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_1
+   Instance path: comm_protocols/axi1x2_inst/axi2axil_M01_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        104         1.4
+                               LUTGATE	         68         1.1
+                                LUTCCU	         36         2.4
+                                PFUREG	         85         1.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_2	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_2
+   Instance path: comm_protocols/secured_instance_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        104         1.4
+                               LUTGATE	         68         1.1
+                                LUTCCU	         36         2.4
+                                PFUREG	         85         1.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_3	          1         0.7
+                      secured_design_4	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_3
+   Instance path: comm_protocols/secured_instance_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         55         0.7
+                               LUTGATE	         37         0.6
+                                LUTCCU	         18         1.2
+                                PFUREG	         50         1.1
+---------------------------------------------------
+Report for cell secured_design_4
+   Instance path: comm_protocols/secured_instance_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         49         0.7
+                               LUTGATE	         31         0.5
+                                LUTCCU	         18         1.2
+                                PFUREG	         35         0.8
+---------------------------------------------------
+Report for cell secured_design_5
+   Instance path: comm_protocols/axi1x2_inst/axi2axil_M00_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        104         1.4
+                               LUTGATE	         68         1.1
+                                LUTCCU	         36         2.4
+                                PFUREG	        101         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_6	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_6
+   Instance path: comm_protocols/secured_instance_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        104         1.4
+                               LUTGATE	         68         1.1
+                                LUTCCU	         36         2.4
+                                PFUREG	        101         2.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_7	          1         0.7
+                      secured_design_8	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_7
+   Instance path: comm_protocols/secured_instance_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         55         0.7
+                               LUTGATE	         37         0.6
+                                LUTCCU	         18         1.2
+                                PFUREG	         58         1.3
+---------------------------------------------------
+Report for cell secured_design_8
+   Instance path: comm_protocols/secured_instance_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         49         0.7
+                               LUTGATE	         31         0.5
+                                LUTCCU	         18         1.2
+                                PFUREG	         43         1.0
+---------------------------------------------------
+Report for cell axi_crossbarNxM_12_layer0
+   Instance path: comm_protocols/axi1x2_inst/axi_crossbarNxM_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        407         5.4
+                               LUTGATE	        361         6.0
+                                LUTCCU	         46         3.1
+                                PFUREG	        233         5.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_9	          1         5.4
+---------------------------------------------------
+Report for cell secured_design_9
+   Instance path: comm_protocols/axi1x2_inst/axi_crossbarNxM_inst/axi_crossbar_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        407         5.4
+                               LUTGATE	        361         6.0
+                                LUTCCU	         46         3.1
+                                PFUREG	        233         5.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_10	          1         2.6
+                     secured_design_20	          1         2.8
+---------------------------------------------------
+Report for cell secured_design_10
+   Instance path: comm_protocols/secured_instance_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        195         2.6
+                               LUTGATE	        177         3.0
+                                LUTCCU	         18         1.2
+                                PFUREG	        135         3.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_11	          1         0.9
+                     secured_design_12	          1         0.3
+                     secured_design_15	          1         0.0
+                     secured_design_16	          1         0.1
+                     secured_design_17	          1         0.0
+                     secured_design_18	          1         0.3
+                     secured_design_19	          1         0.4
+---------------------------------------------------
+Report for cell secured_design_11
+   Instance path: comm_protocols/secured_instance_11
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         70         0.9
+                               LUTGATE	         52         0.9
+                                LUTCCU	         18         1.2
+                                PFUREG	         24         0.5
+---------------------------------------------------
+Report for cell secured_design_12
+   Instance path: comm_protocols/secured_instance_12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         24         0.3
+                               LUTGATE	         24         0.4
+                                PFUREG	          8         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_13	          1         0.0
+                     secured_design_14	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_13
+   Instance path: comm_protocols/secured_instance_13
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_14
+   Instance path: comm_protocols/secured_instance_14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_15
+   Instance path: comm_protocols/secured_instance_15
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.1
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_16
+   Instance path: comm_protocols/secured_instance_16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_17
+   Instance path: comm_protocols/secured_instance_17
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_18
+   Instance path: comm_protocols/secured_instance_18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         22         0.3
+                               LUTGATE	         22         0.4
+                                PFUREG	         33         0.7
+---------------------------------------------------
+Report for cell secured_design_19
+   Instance path: comm_protocols/secured_instance_19
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         28         0.4
+                               LUTGATE	         28         0.5
+                                PFUREG	         49         1.1
+---------------------------------------------------
+Report for cell secured_design_20
+   Instance path: comm_protocols/secured_instance_20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        212         2.8
+                               LUTGATE	        184         3.1
+                                LUTCCU	         28         1.9
+                                PFUREG	         98         2.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_21	          1         1.1
+                     secured_design_22	          1         0.3
+                     secured_design_25	          1         0.3
+                     secured_design_26	          1         0.1
+                     secured_design_27	          1         0.1
+                     secured_design_28	          1         0.1
+                     secured_design_29	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_21
+   Instance path: comm_protocols/secured_instance_21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         82         1.1
+                               LUTGATE	         64         1.1
+                                LUTCCU	         18         1.2
+                                PFUREG	         22         0.5
+---------------------------------------------------
+Report for cell secured_design_22
+   Instance path: comm_protocols/secured_instance_22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.3
+                               LUTGATE	         26         0.4
+                                PFUREG	          8         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_23	          1         0.0
+                     secured_design_24	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_23
+   Instance path: comm_protocols/secured_instance_23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_24
+   Instance path: comm_protocols/secured_instance_24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_25
+   Instance path: comm_protocols/secured_instance_25
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.3
+                               LUTGATE	         20         0.3
+                                PFUREG	         20         0.5
+---------------------------------------------------
+Report for cell secured_design_26
+   Instance path: comm_protocols/secured_instance_26
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.1
+                               LUTGATE	          5         0.1
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_27
+   Instance path: comm_protocols/secured_instance_27
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.1
+                               LUTGATE	          5         0.1
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_28
+   Instance path: comm_protocols/secured_instance_28
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                PFUREG	         14         0.3
+---------------------------------------------------
+Report for cell secured_design_29
+   Instance path: comm_protocols/secured_instance_29
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.1
+                                PFUREG	         14         0.3
+---------------------------------------------------
+Report for cell axil2apb0
+   Instance path: comm_protocols/axil2apb0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         0.5
+                               LUTGATE	         39         0.7
+                                PFUREG	         45         1.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_30	          1         0.5
+---------------------------------------------------
+Report for cell secured_design_30
+   Instance path: comm_protocols/axil2apb0_inst/axil2apb_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         39         0.5
+                               LUTGATE	         39         0.7
+                                PFUREG	         45         1.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_31	          1         0.3
+                     secured_design_32	          1         0.1
+                     secured_design_33	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_31
+   Instance path: comm_protocols/secured_instance_31
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         25         0.3
+                               LUTGATE	         25         0.4
+                                PFUREG	          5         0.1
+---------------------------------------------------
+Report for cell secured_design_32
+   Instance path: comm_protocols/secured_instance_32
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          9         0.1
+                               LUTGATE	          9         0.2
+                                PFUREG	          9         0.2
+---------------------------------------------------
+Report for cell secured_design_33
+   Instance path: comm_protocols/secured_instance_33
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          5         0.1
+---------------------------------------------------
+Report for cell axil2apb1
+   Instance path: comm_protocols/axil2apb1_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         47         0.6
+                               LUTGATE	         47         0.8
+                                PFUREG	         69         1.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_34	          1         0.6
+---------------------------------------------------
+Report for cell secured_design_34
+   Instance path: comm_protocols/axil2apb1_inst/axil2apb_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         47         0.6
+                               LUTGATE	         47         0.8
+                                PFUREG	         69         1.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_35	          1         0.3
+                     secured_design_36	          1         0.2
+                     secured_design_37	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_35
+   Instance path: comm_protocols/secured_instance_35
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         26         0.3
+                               LUTGATE	         26         0.4
+                                PFUREG	          5         0.1
+---------------------------------------------------
+Report for cell secured_design_36
+   Instance path: comm_protocols/secured_instance_36
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         18         0.2
+                               LUTGATE	         18         0.3
+                                PFUREG	         17         0.4
+---------------------------------------------------
+Report for cell secured_design_37
+   Instance path: comm_protocols/secured_instance_37
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          5         0.1
+---------------------------------------------------
+Report for cell cpu0_1s_0_1s_2097152
+   Instance path: comm_protocols/cpu0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       5990        79.7
+                               LUTGATE	       4718        78.7
+                                LUTRAM	         48        100.0
+                                LUTCCU	       1224        82.9
+                                PFUREG	       3397        76.5
+                                   EBR	         18        34.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_38	          1        79.7
+---------------------------------------------------
+Report for cell secured_design_38
+   Instance path: comm_protocols/cpu0_inst/riscvrtos_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       5990        79.7
+                               LUTGATE	       4718        78.7
+                                LUTRAM	         48        100.0
+                                LUTCCU	       1224        82.9
+                                PFUREG	       3397        76.5
+                                   EBR	         18        34.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_39	          1         1.7
+                     secured_design_56	          1         0.1
+                     secured_design_57	          1         0.1
+                     secured_design_58	          1        67.2
+                     secured_design_61	          1         6.8
+                     secured_design_64	          1         1.8
+                     secured_design_74	          1         0.6
+                     secured_design_75	          1         1.2
+                     secured_design_76	          1         0.0
+                     secured_design_77	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_39
+   Instance path: comm_protocols/secured_instance_39
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        131         1.7
+                               LUTGATE	        117         2.0
+                                LUTCCU	         14         0.9
+                                PFUREG	        267         6.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_40	          1         0.5
+                     secured_design_52	          1         1.0
+                     secured_design_55	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_40
+   Instance path: comm_protocols/secured_instance_40
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         41         0.5
+                               LUTGATE	         27         0.5
+                                LUTCCU	         14         0.9
+                                PFUREG	         62         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_41	          1         0.0
+                     secured_design_42	          1         0.0
+                     secured_design_43	          1         0.0
+                     secured_design_44	          1         0.0
+                     secured_design_45	          1         0.0
+                     secured_design_46	          1         0.0
+                     secured_design_47	          1         0.0
+                     secured_design_48	          1         0.0
+                     secured_design_49	          1         0.5
+---------------------------------------------------
+Report for cell secured_design_41
+   Instance path: comm_protocols/secured_instance_41
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_42
+   Instance path: comm_protocols/secured_instance_42
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_43
+   Instance path: comm_protocols/secured_instance_43
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_44
+   Instance path: comm_protocols/secured_instance_44
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_45
+   Instance path: comm_protocols/secured_instance_45
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_46
+   Instance path: comm_protocols/secured_instance_46
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_47
+   Instance path: comm_protocols/secured_instance_47
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_48
+   Instance path: comm_protocols/secured_instance_48
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_49
+   Instance path: comm_protocols/secured_instance_49
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         34         0.5
+                               LUTGATE	         20         0.3
+                                LUTCCU	         14         0.9
+                                PFUREG	         53         1.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_50	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_50
+   Instance path: comm_protocols/secured_instance_50
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_51	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_51
+   Instance path: comm_protocols/secured_instance_51
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_52
+   Instance path: comm_protocols/secured_instance_52
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         75         1.0
+                               LUTGATE	         75         1.3
+                                PFUREG	        122         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_53	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_53
+   Instance path: comm_protocols/secured_instance_53
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          9         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_54	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_54
+   Instance path: comm_protocols/secured_instance_54
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_55
+   Instance path: comm_protocols/secured_instance_55
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.2
+                               LUTGATE	         14         0.2
+                                PFUREG	         78         1.8
+---------------------------------------------------
+Report for cell secured_design_56
+   Instance path: comm_protocols/secured_instance_56
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                PFUREG	         59         1.3
+---------------------------------------------------
+Report for cell secured_design_57
+   Instance path: comm_protocols/secured_instance_57
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                PFUREG	        109         2.5
+---------------------------------------------------
+Report for cell secured_design_58
+   Instance path: comm_protocols/secured_instance_58
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       5053        67.2
+                               LUTGATE	       3941        65.7
+                                LUTRAM	         48        100.0
+                                LUTCCU	       1064        72.1
+                                PFUREG	       2521        56.8
+                                   EBR	         18        34.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_59	          1         4.0
+                     secured_design_60	          1        14.4
+---------------------------------------------------
+Report for cell secured_design_59
+   Instance path: comm_protocols/secured_instance_59
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        300         4.0
+                               LUTGATE	        230         3.8
+                                LUTCCU	         70         4.7
+                                PFUREG	        110         2.5
+                                   EBR	          4         7.7
+---------------------------------------------------
+Report for cell secured_design_60
+   Instance path: comm_protocols/secured_instance_60
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1080        14.4
+                               LUTGATE	        994        16.6
+                                LUTCCU	         86         5.8
+                                PFUREG	        178         4.0
+                                   EBR	         10        19.2
+---------------------------------------------------
+Report for cell secured_design_61
+   Instance path: comm_protocols/secured_instance_61
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        511         6.8
+                               LUTGATE	        365         6.1
+                                LUTCCU	        146         9.9
+                                PFUREG	        386         8.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_62	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_62
+   Instance path: comm_protocols/secured_instance_62
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_63	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_63
+   Instance path: comm_protocols/secured_instance_63
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_64
+   Instance path: comm_protocols/secured_instance_64
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        139         1.8
+                               LUTGATE	        139         2.3
+                                PFUREG	         49         1.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_65	          1         0.5
+                     secured_design_66	          1         1.0
+                     secured_design_67	          1         0.3
+---------------------------------------------------
+Report for cell secured_design_65
+   Instance path: comm_protocols/secured_instance_65
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         40         0.5
+                               LUTGATE	         40         0.7
+                                PFUREG	         23         0.5
+---------------------------------------------------
+Report for cell secured_design_66
+   Instance path: comm_protocols/secured_instance_66
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         76         1.0
+                               LUTGATE	         76         1.3
+                                PFUREG	         11         0.2
+---------------------------------------------------
+Report for cell secured_design_67
+   Instance path: comm_protocols/secured_instance_67
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         23         0.3
+                               LUTGATE	         23         0.4
+                                PFUREG	         15         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_68	          1         0.2
+                     secured_design_69	          1         0.0
+                     secured_design_70	          1         0.0
+                     secured_design_71	          1         0.0
+                     secured_design_72	          1         0.0
+                     secured_design_73	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_68
+   Instance path: comm_protocols/secured_instance_68
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         12         0.2
+                               LUTGATE	         12         0.2
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_69
+   Instance path: comm_protocols/secured_instance_69
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_70
+   Instance path: comm_protocols/secured_instance_70
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_71
+   Instance path: comm_protocols/secured_instance_71
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_72
+   Instance path: comm_protocols/secured_instance_72
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_73
+   Instance path: comm_protocols/secured_instance_73
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell secured_design_74
+   Instance path: comm_protocols/secured_instance_74
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         43         0.6
+                               LUTGATE	         43         0.7
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_75
+   Instance path: comm_protocols/secured_instance_75
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         87         1.2
+                               LUTGATE	         87         1.5
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_76
+   Instance path: comm_protocols/secured_instance_76
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_77
+   Instance path: comm_protocols/secured_instance_77
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.2
+                               LUTGATE	         15         0.3
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell osc0
+   Instance path: comm_protocols/osc0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+        osc0_ipgen_lscc_osc_Z19_layer0	          1         0.0
+---------------------------------------------------
+Report for cell osc0_ipgen_lscc_osc_Z19_layer0
+   Instance path: comm_protocols/osc0_inst/lscc_osc_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell pll0
+   Instance path: comm_protocols/pll0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+        pll0_ipgen_lscc_pll_Z20_layer0	          1         0.0
+---------------------------------------------------
+Report for cell pll0_ipgen_lscc_pll_Z20_layer0
+   Instance path: comm_protocols/pll0_inst/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell s0_apb_gpio
+   Instance path: comm_protocols/s0_apb_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        202         2.7
+                               LUTGATE	        202         3.4
+                                 IOREG	         16        94.1
+                                 IOBUF	         16        84.2
+                                PFUREG	        169         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+s0_apb_gpio_ipgen_lscc_gpio_Z21_layer0	          1         2.7
+---------------------------------------------------
+Report for cell s0_apb_gpio_ipgen_lscc_gpio_Z21_layer0
+   Instance path: comm_protocols/s0_apb_gpio_inst/lscc_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        202         2.7
+                               LUTGATE	        202         3.4
+                                 IOREG	         16        94.1
+                                 IOBUF	         16        84.2
+                                PFUREG	        169         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+s0_apb_gpio_ipgen_lscc_apb2lmmi_16s_6s_1s_1_2_4_8_4s	          1         0.1
+s0_apb_gpio_ipgen_lscc_gpio_lmmi_Z22_layer0	          1         2.6
+---------------------------------------------------
+Report for cell s0_apb_gpio_ipgen_lscc_gpio_lmmi_Z22_layer0
+   Instance path: comm_protocols/s0_apb_gpio_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        192         2.6
+                               LUTGATE	        192         3.2
+                                 IOREG	         16        94.1
+                                 IOBUF	         16        84.2
+                                PFUREG	        128         2.9
+---------------------------------------------------
+Report for cell s0_apb_gpio_ipgen_lscc_apb2lmmi_16s_6s_1s_1_2_4_8_4s
+   Instance path: comm_protocols/s0_apb_gpio_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	         10         0.2
+                                PFUREG	         41         0.9
+---------------------------------------------------
+Report for cell s1_apb_uart
+   Instance path: comm_protocols/s1_apb_uart_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        263         3.5
+                               LUTGATE	        217         3.6
+                                LUTCCU	         46         3.1
+                                 IOREG	          1         5.9
+                                PFUREG	        146         3.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+s1_apb_uart_ipgen_lscc_uart_Z24_layer0	          1         3.5
+---------------------------------------------------
+Report for cell s1_apb_uart_ipgen_lscc_uart_Z24_layer0
+   Instance path: comm_protocols/s1_apb_uart_inst/lscc_uart_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        263         3.5
+                               LUTGATE	        217         3.6
+                                LUTCCU	         46         3.1
+                                 IOREG	          1         5.9
+                                PFUREG	        146         3.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+s1_apb_uart_ipgen_lscc_uart_intface_Z23_layer0	          1         0.7
+s1_apb_uart_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D	          1         1.5
+s1_apb_uart_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64	          1         1.3
+---------------------------------------------------
+Report for cell s1_apb_uart_ipgen_lscc_uart_intface_Z23_layer0
+   Instance path: comm_protocols/s1_apb_uart_inst/lscc_uart_inst/u_intface
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         53         0.7
+                               LUTGATE	         53         0.9
+                                PFUREG	         48         1.1
+---------------------------------------------------
+Report for cell s1_apb_uart_ipgen_lscc_uart_rxcver_8s_0s_5s_1_2_4_8_16_MachXO3D
+   Instance path: comm_protocols/s1_apb_uart_inst/lscc_uart_inst/u_rxcver
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        112         1.5
+                               LUTGATE	         84         1.4
+                                LUTCCU	         28         1.9
+                                 IOREG	          1         5.9
+                                PFUREG	         56         1.3
+---------------------------------------------------
+Report for cell s1_apb_uart_ipgen_lscc_uart_txmitt_8s_0s_7s_1_2_4_8_16_32_64
+   Instance path: comm_protocols/s1_apb_uart_inst/lscc_uart_inst/u_txmitt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         98         1.3
+                               LUTGATE	         80         1.3
+                                LUTCCU	         18         1.2
+                                PFUREG	         42         0.9
+---------------------------------------------------
+Report for cell system0_system0
+   Instance path: comm_protocols/system0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        196         2.6
+                               LUTGATE	        140         2.3
+                                LUTCCU	         56         3.8
+                                PFUREG	        108         2.4
+                                   EBR	          2         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ system0_ipgen_lscc_sys_mem_Z25_layer0	          1         2.6
+---------------------------------------------------
+Report for cell system0_ipgen_lscc_sys_mem_Z25_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        196         2.6
+                               LUTGATE	        140         2.3
+                                LUTCCU	         56         3.8
+                                PFUREG	        108         2.4
+                                   EBR	          2         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+system0_ipgen_lscc_axi4mem_arbiter_R/W_DISABLED_32s_10_4s_0s_0_1_2	          1         0.0
+system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0	          1         2.6
+     system0_ipgen_lscc_mem_Z27_layer0	          1         0.0
+---------------------------------------------------
+Report for cell system0_ipgen_lscc_axi4mem_subordinate_Z26_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/bridge_s0.genblk1.bridge_s0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        196         2.6
+                               LUTGATE	        140         2.3
+                                LUTCCU	         56         3.8
+                                PFUREG	        107         2.4
+---------------------------------------------------
+Report for cell system0_ipgen_lscc_mem_Z27_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+           lscc_ram_dp_true_Z32_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_Z32_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AXI4.ebr.u_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_main_Z31_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_main_Z31_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AXI4.ebr.u_mem/mem_main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_inst_Z28_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_inst_Z28_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AXI4.ebr.u_mem/mem_main/uinst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_core_Z29_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z30_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z30_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AXI4.ebr.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[1].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z29_layer0
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AXI4.ebr.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[0].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell system0_ipgen_lscc_axi4mem_arbiter_R/W_DISABLED_32s_10_4s_0s_0_1_2
+   Instance path: comm_protocols/system0_inst/lscc_sys_mem_inst/AXI4_ARB.u_arbiter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell tcm0_1.3.9
+   Instance path: comm_protocols/tcm0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        163         2.2
+                               LUTGATE	        131         2.2
+                                LUTCCU	         32         2.2
+                                PFUREG	         86         1.9
+                                   EBR	         32        61.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+    tcm0_ipgen_localbus_tcm_Z69_layer0	          1         2.2
+---------------------------------------------------
+Report for cell tcm0_ipgen_localbus_tcm_Z69_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        163         2.2
+                               LUTGATE	        131         2.2
+                                LUTCCU	         32         2.2
+                                PFUREG	         86         1.9
+                                   EBR	         32        61.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+        tcm0_ipgen_lscc_mem_Z33_layer0	          1         0.1
+---------------------------------------------------
+Report for cell tcm0_ipgen_lscc_mem_Z33_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                   EBR	         32        61.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+           lscc_ram_dp_true_Z68_layer0	          1         0.1
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_Z68_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                   EBR	         32        61.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_main_Z67_layer0	          1         0.1
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_main_Z67_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                   EBR	         32        61.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_inst_Z34_layer0	          1         0.1
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_inst_Z34_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.1
+                               LUTGATE	          4         0.1
+                                   EBR	         32        61.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_core_Z35_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z36_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z37_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z38_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z39_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z40_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z41_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z42_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z43_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z44_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z45_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z46_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z47_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z48_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z49_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z50_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z51_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z52_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z53_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z54_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z55_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z56_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z57_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z58_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z59_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z60_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z61_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z62_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z63_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z64_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z65_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z66_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z39_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[4].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z66_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[31].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z64_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[29].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z61_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[26].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z35_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[0].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z63_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[28].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z60_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[25].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z51_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[16].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z55_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[20].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z59_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[24].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z50_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[15].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z54_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[19].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z52_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[17].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z49_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[14].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z53_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[18].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z57_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[22].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z48_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[13].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z45_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[10].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z56_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[21].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z47_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[12].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z38_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[3].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z42_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[7].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z46_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[11].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z37_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[2].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z41_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[6].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z62_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[27].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z36_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[1].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z40_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[5].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z44_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[9].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z65_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[30].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z58_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[23].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.9
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z43_layer0
+   Instance path: comm_protocols/tcm0_inst/localbus_tcm_inst/u_lscc_mem/lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[8].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.9

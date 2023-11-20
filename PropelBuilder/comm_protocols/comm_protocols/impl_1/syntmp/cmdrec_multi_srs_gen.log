@@ -1,0 +1,7 @@
+C:\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe  -link  -top  comm_protocols  -multisrs  C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\synwork\comm_protocols_impl_1_comp.srs  -osyn  C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\synwork\comm_protocols_impl_1_mult.srs  -log  C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\synlog\comm_protocols_impl_1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe -link -top comm_protocols -multisrs ..\synwork\comm_protocols_impl_1_comp.srs -osyn ..\synwork\comm_protocols_impl_1_mult.srs -log ..\synlog\comm_protocols_impl_1_multi_srs_gen.srr
+rc:0 success:1 runtime:7
+file:..\synwork\comm_protocols_impl_1_comp.srs|io:i|time:1700460692|size:2593606|exec:0|csum:D93F90CE180924B7965A3F8079BCEE58
+file:..\synwork\comm_protocols_impl_1_mult.srs|io:o|time:1700460700|size:18375|exec:0|csum:
+file:..\synlog\comm_protocols_impl_1_multi_srs_gen.srr|io:o|time:1700460700|size:1187|exec:0|csum:
+file:..\..\..\..\..\..\..\lscc\radiant\2023.1\synpbase\bin64\syn_nfilter.exe|io:i|time:1685564428|size:10600960|exec:1|csum:5D87BCE07D7E863695AC28DD65895E86

@@ -1,0 +1,160 @@
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\rtl\system0_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\system0.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\misc\system0_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\misc\system0_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\rtl\system0.v 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/common/system_memory)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\testbench\dut_params.v 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\design.xml 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\system0\2.0.0\system0.ipx 
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_interconnect_lite_hier).
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/nx/latticesemi.com_riscv_rx_2.2.0).
+Error: name 'check_hex_format' is not defined in SettingInstance: TCM_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: AXI_INSTR_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: TCM_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: AXI_INSTR_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: TCM_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: AXI_INSTR_BASE_ADDR_INPUT
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\rtl\cpu0_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\cpu0.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\misc\cpu0_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\misc\cpu0_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\rtl\cpu0.sv 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/nx/latticesemi.com_riscv_rx_2.2.0)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\testbench\dut_params.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\cpu0\2.2.0\cpu0.ipx 
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\rtl\axi2ahbl_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\axi2ahbl.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\misc\axi2ahbl_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\misc\axi2ahbl_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\rtl\axi2ahbl.v 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_to_ahbl_bridge)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi2ahbl\0.1.0\axi2ahbl.ipx 
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\rtl\axil2apb0_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\axil2apb0.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\misc\axil2apb0_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\misc\axil2apb0_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\rtl\axil2apb0.v 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_lite_to_apb_bridge)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb0\0.1.0\axil2apb0.ipx 
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_interconnect_lite_hier).
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\axi1x2.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\misc\axi1x2_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\misc\axi1x2_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\rtl\axi1x2.v 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_interconnect_lite_hier)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\testbench\dut_params.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\eval\dut_params.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\eval\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\component.xml 
+"C:/lscc/propel/2023.1/builder/rtf/ispfpga\data\python\nt64\bin\python" "C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\eval/genHierRtl.py"
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axi1x2\0.2.0\axi1x2.ipx 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\rtl\s0_axi_gpio_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\s0_axi_gpio.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\misc\s0_axi_gpio_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\misc\s0_axi_gpio_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\rtl\s0_axi_gpio.v 
+Warning: No directory "ldc" in IP module(D:/PropelLocalIP_2023/latticesemi.com_ip_gpio_1.6.1)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\testbench\dut_params.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\s0_axi_gpio.ipx 
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_interconnect_lite_hier).
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/nx/latticesemi.com_riscv_rx_2.2.0).
+Error: name 'check_hex_format' is not defined in SettingInstance: TCM_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: AXI_INSTR_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: TCM_BASE_ADDR_INPUT
+Error: name 'check_hex_format' is not defined in SettingInstance: AXI_INSTR_BASE_ADDR_INPUT
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_interconnect_lite_hier).
+Warning: No *.v in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_interconnect_lite_hier).
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\rtl\axil2apb1_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\axil2apb1.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\misc\axil2apb1_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\misc\axil2apb1_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\rtl\axil2apb1.v 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_lite_to_apb_bridge)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2apb1\0.1.0\axil2apb1.ipx 
+WARNING: missing testbench HDL files.
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\rtl\axil2axil_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\axil2axil.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\misc\axil2axil_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\misc\axil2axil_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\rtl\axil2axil.v 
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/axi/axi_to_axil_bridge)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\module\axil2axil\0.1.0\axil2axil.ipx 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\rtl\s0_axi_gpio_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\s0_axi_gpio.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\misc\s0_axi_gpio_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\misc\s0_axi_gpio_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\rtl\s0_axi_gpio.v 
+Warning: No directory "ldc" in IP module(D:/PropelLocalIP_2023/latticesemi.com_ip_gpio_1.6.1)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\testbench\dut_params.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\design.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\s0_axi_gpio\1.6.1\s0_axi_gpio.ipx 
+path:  none lib_dir:  C:
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\rtl\tcm0_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\tcm0.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\misc\tcm0_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\misc\tcm0_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\rtl\tcm0.v 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/common/localbus_tcm)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\testbench\dut_params.v 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\design.xml 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\component.xml 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\tcm0.ipx 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+WARNING: missing driver HDL files.
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\rtl\tcm0_bb.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\tcm0.cfg 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\misc\tcm0_tmpl.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\misc\tcm0_tmpl.vhd 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\rtl\tcm0.v 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Warning: No directory "ldc" in IP module(C:/lscc/propel/2023.1/builder/rtf/ip/common/localbus_tcm)
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\testbench\dut_params.v 
+path:  none lib_dir:  C:/lscc/propel/2023.1/templates/LFCPNX_Template02/.lib
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\testbench\dut_inst.v 
+Writing C:\lscc\propel\2023.1\templates\LFCPNX_Template02\.lib\latticesemi.com\ip\tcm0\1.3.8\design.xml 

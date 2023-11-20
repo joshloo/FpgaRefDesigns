@@ -1,0 +1,413 @@
+PAD Specification File
+***************************
+
+PART TYPE:        LFMXO5-25
+Performance Grade:      7_High-Performance_1.0V
+PACKAGE:          BBG400
+Package Status:                     Final          Version 8
+
+Mon Nov 20 14:15:31 2023
+
+Pinout by Port Name:
++---------------+----------+---------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Port Name     | Pin/Bank | Buffer Type   | Site  | Properties                                                                                                                                                           |
++---------------+----------+---------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rstn_i        | F20/2    | LVCMOS33_IN   | PR10A | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP CLAMP:ON VREF:OFF        |
+| s0_gpio[0]    | R3/8     | LVCMOS33_BIDI | PL34B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[10]   | E15/1    | LVCMOS33_BIDI | PT57B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[11]   | F11/1    | LVCMOS33_BIDI | PT34B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[12]   | A15/1    | LVCMOS33_BIDI | PT55A | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF   |
+| s0_gpio[13]   | A16/1    | LVCMOS33_BIDI | PT55B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:ON VREF:OFF   |
+| s0_gpio[14]   | A17/1    | LVCMOS33_BIDI | PT62A | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[15]   | A18/1    | LVCMOS33_BIDI | PT62B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP CLAMP:ON VREF:OFF     |
+| s0_gpio[1]    | R2/8     | LVCMOS33_BIDI | PL37B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[2]    | R1/8     | LVCMOS33_BIDI | PL37A | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[3]    | P7/8     | LVCMOS33_BIDI | PL36B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[4]    | H12/1    | LVCMOS33_BIDI | PT37B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[5]    | H11/1    | LVCMOS33_BIDI | PT35B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[6]    | G13/1    | LVCMOS33_BIDI | PT51B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[7]    | G12/1    | LVCMOS33_BIDI | PT37A | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[8]    | F14/1    | LVCMOS33_BIDI | PT53B | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s0_gpio[9]    | G11/1    | LVCMOS33_BIDI | PT35A | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:DOWN CLAMP:ON VREF:OFF   |
+| s1_uart_rxd_i | H14/2    | LVCMOS33_IN   | PR11B | DRIVE:NA SLEWRATE:NA GLITCHFILTER:ON HYSTERESIS:ON TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:UP CLAMP:ON VREF:OFF        |
+| s1_uart_txd_o | G14/2    | LVCMOS33_OUT  | PR11A | DRIVE:8mA SLEWRATE:SLOW GLITCHFILTER:OFF HYSTERESIS:NA TERMINATION:OFF OPENDRAIN:OFF IO_TYPE:LVCMOS33 DIFFRESISTOR:OFF DIFFDRIVE:NA PULLMODE:NONE CLAMP:OFF VREF:OFF |
++---------------+----------+---------------+-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Vccio by Bank:
++------+-------+
+| Bank | Vccio |
++------+-------+
+| 1    | 3.3V  |
+| 2    | 3.3V  |
+| 8    | 3.3V  |
++------+-------+
+
+Vref by Bank:
++------+-----+-----------------+---------+
+| Vref | Pin | Bank # / Vref # | Load(s) |
++------+-----+-----------------+---------+
++------+-----+-----------------+---------+
+
+Pinout by Pin Number:
++----------+-----------------------+------------+---------------+---------+-----------------------------------------+
+| Pin/Bank | Pin Info              | Preference | Buffer Type   | Site    | Dual Function                           |
++----------+-----------------------+------------+---------------+---------+-----------------------------------------+
+| A2/0     |     unused, PULL:DOWN |            |               | PT9A    |                                         |
+| A3/0     |     unused, PULL:DOWN |            |               | PT9B    |                                         |
+| A4/0     |     unused, PULL:DOWN |            |               | PT11B   |                                         |
+| A5/0     |     unused, PULL:DOWN |            |               | PT12B   |                                         |
+| A6/0     |     unused, PULL:DOWN |            |               | PT18B   |                                         |
+| A7/0     |     unused, PULL:DOWN |            |               | PT20B   |                                         |
+| A8/0     |     unused, PULL:DOWN |            |               | PT24B   |                                         |
+| A9/0     |     unused, PULL:DOWN |            |               | PT31B   |                                         |
+| A11/1    |     unused, PULL:DOWN |            |               | PT32A   |                                         |
+| A12/1    |     unused, PULL:DOWN |            |               | PT36A   | OSC_BURST                               |
+| A13/1    |     unused, PULL:DOWN |            |               | PT39A   |                                         |
+| A14/1    |     unused, PULL:DOWN |            |               | PT52A   | PCLKT1_0                                |
+| A15/1    | s0_gpio[12]           | LOCATED    | LVCMOS33_BIDI | PT55A   |                                         |
+| A16/1    | s0_gpio[13]           | LOCATED    | LVCMOS33_BIDI | PT55B   |                                         |
+| A17/1    | s0_gpio[14]           | LOCATED    | LVCMOS33_BIDI | PT62A   |                                         |
+| A18/1    | s0_gpio[15]           | LOCATED    | LVCMOS33_BIDI | PT62B   |                                         |
+| B1/9     |     unused, PULL:DOWN |            |               | PL2A    | ULC_GPLL0T_IN/EIO                       |
+| B2/0     |     unused, PULL:DOWN |            |               | PT8B    |                                         |
+| B3/0     |     unused, PULL:DOWN |            |               | PT11A   |                                         |
+| B4/0     |     unused, PULL:DOWN |            |               | PT12A   |                                         |
+| B5/0     |     unused, PULL:DOWN |            |               | PT15B   |                                         |
+| B6/0     |     unused, PULL:DOWN |            |               | PT18A   |                                         |
+| B7/0     |     unused, PULL:DOWN |            |               | PT20A   | PCLKT0_0                                |
+| B8/0     |     unused, PULL:DOWN |            |               | PT24A   |                                         |
+| B9/0     |     unused, PULL:DOWN |            |               | PT31A   |                                         |
+| B11/1    |     unused, PULL:DOWN |            |               | PT32B   |                                         |
+| B12/1    |     unused, PULL:DOWN |            |               | PT36B   |                                         |
+| B13/1    |     unused, PULL:DOWN |            |               | PT39B   |                                         |
+| B14/1    |     unused, PULL:DOWN |            |               | PT52B   |                                         |
+| B15/1    |     unused, PULL:DOWN |            |               | PT56A   |                                         |
+| B16/1    |     unused, PULL:DOWN |            |               | PT60A   |                                         |
+| B17/1    |     unused, PULL:DOWN |            |               | PT60B   |                                         |
+| C1/9     |     unused, PULL:DOWN |            |               | PL2B    | EIO                                     |
+| C2/0     |     unused, PULL:DOWN |            |               | PT8A    |                                         |
+| C3/0     |     unused, PULL:DOWN |            |               | PT10B   |                                         |
+| C5/0     |     unused, PULL:DOWN |            |               | PT15A   |                                         |
+| C6/0     |     unused, PULL:DOWN |            |               | PT17B   |                                         |
+| C8/0     |     unused, PULL:DOWN |            |               | PT23B   |                                         |
+| C11/1    |     unused, PULL:DOWN |            |               | PT33A   |                                         |
+| C13/1    |     unused, PULL:DOWN |            |               | PT41A   |                                         |
+| C15/1    |     unused, PULL:DOWN |            |               | PT56B   |                                         |
+| C16/1    |     unused, PULL:DOWN |            |               | PT58A   |                                         |
+| C20/2    |     unused, PULL:DOWN |            |               | PR2B    | SD4/S7_IN                               |
+| D1/9     |     unused, PULL:DOWN |            |               | PL3B    | ULC_GPLL0T_MFGOUT2/EIO                  |
+| D2/9     |     unused, PULL:DOWN |            |               | PL3A    | ULC_GPLL0T_MFGOUT1/EIO                  |
+| D3/0     |     unused, PULL:DOWN |            |               | PT10A   |                                         |
+| D5/0     |     unused, PULL:DOWN |            |               | PT14B   |                                         |
+| D6/0     |     unused, PULL:DOWN |            |               | PT17A   |                                         |
+| D8/0     |     unused, PULL:DOWN |            |               | PT23A   |                                         |
+| D11/1    |     unused, PULL:DOWN |            |               | PT33B   |                                         |
+| D13/1    |     unused, PULL:DOWN |            |               | PT41B   |                                         |
+| D15/1    |     unused, PULL:DOWN |            |               | PT57A   |                                         |
+| D16/1    |     unused, PULL:DOWN |            |               | PT58B   |                                         |
+| D19/2    |     unused, PULL:DOWN |            |               | PR3A    | SD5/PCLKT2_0/S7_OUT                     |
+| D20/2    |     unused, PULL:DOWN |            |               | PR3B    | SD10/S6_IN                              |
+| E1/9     |     unused, PULL:DOWN |            |               | PL5A    | EIO                                     |
+| E2/9     |     unused, PULL:DOWN |            |               | PL4B    | EIO                                     |
+| E3/9     |     unused, PULL:DOWN |            |               | PL4A    | EIO                                     |
+| E4/0     |     unused, PULL:DOWN |            |               | PT13A   |                                         |
+| E5/0     |     unused, PULL:DOWN |            |               | PT14A   |                                         |
+| E6/0     |     unused, PULL:DOWN |            |               | PT16B   |                                         |
+| E7/0     |     unused, PULL:DOWN |            |               | PT22A   |                                         |
+| E8/0     |     unused, PULL:DOWN |            |               | PT22B   |                                         |
+| E11/1    |     unused, PULL:DOWN |            |               | PT34A   |                                         |
+| E13/1    | Reserved: sysCONFIG   |            |               | PT43A   | INITN                                   |
+| E14/1    |     unused, PULL:DOWN |            |               | PT53A   | PCLKT1_1                                |
+| E15/1    | s0_gpio[10]           | LOCATED    | LVCMOS33_BIDI | PT57B   |                                         |
+| E16/2    |     unused, PULL:DOWN |            |               | PR4A    | SD6/PCLKT2_1/S6_OUT                     |
+| E17/2    |     unused, PULL:DOWN |            |               | PR5A    | SD7/PCLKT2_2                            |
+| E18/2    | Reserved: sysCONFIG   |            |               | PR5B    | TDI/SSI/SD0/S5_OUT                      |
+| E19/2    |     unused, PULL:DOWN |            |               | PR6A    | EIO                                     |
+| E20/2    | Reserved: sysCONFIG   |            |               | PR6B    | TDO/SSO/SD1/S3_OUT                      |
+| F1/9     |     unused, PULL:DOWN |            |               | PL5B    | EIO                                     |
+| F5/0     |     unused, PULL:DOWN |            |               | PT13B   |                                         |
+| F6/0     |     unused, PULL:DOWN |            |               | PT16A   |                                         |
+| F7/0     |     unused, PULL:DOWN |            |               | PT19B   |                                         |
+| F8/0     |     unused, PULL:DOWN |            |               | PT21B   |                                         |
+| F9/0     |     unused, PULL:DOWN |            |               | PT30B   |                                         |
+| F11/1    | s0_gpio[11]           | LOCATED    | LVCMOS33_BIDI | PT34B   |                                         |
+| F12/1    | Reserved: sysCONFIG   |            |               | PT43B   | PROGRAMN                                |
+| F13/1    | Reserved: sysCONFIG   |            |               | PT51A   | DONE                                    |
+| F14/1    | s0_gpio[8]            | LOCATED    | LVCMOS33_BIDI | PT53B   |                                         |
+| F15/2    |     unused, PULL:DOWN |            |               | PR7A    | SD3/SDA/USER_SDA/S4_IN                  |
+| F16/2    | Reserved: sysCONFIG   |            |               | PR4B    | TMS/SCSN/S5_IN                          |
+| F20/2    | rstn_i                | LOCATED    | LVCMOS33_IN   | PR10A   | SD12/S1_IN                              |
+| G1/9     |     unused, PULL:DOWN |            |               | PL8B    | EIO                                     |
+| G2/9     |     unused, PULL:DOWN |            |               | PL8A    | EIO                                     |
+| G3/9     |     unused, PULL:DOWN |            |               | PL7B    | EIO                                     |
+| G4/9     |     unused, PULL:DOWN |            |               | PL7A    | EIO                                     |
+| G5/9     |     unused, PULL:DOWN |            |               | PL6B    | EIO                                     |
+| G6/9     |     unused, PULL:DOWN |            |               | PL6A    | EIO                                     |
+| G7/0     |     unused, PULL:DOWN |            |               | PT19A   |                                         |
+| G8/0     |     unused, PULL:DOWN |            |               | PT21A   | PCLKT0_1                                |
+| G9/0     |     unused, PULL:DOWN |            |               | PT30A   |                                         |
+| G11/1    | s0_gpio[9]            | LOCATED    | LVCMOS33_BIDI | PT35A   | OSC_HI                                  |
+| G12/1    | s0_gpio[7]            | LOCATED    | LVCMOS33_BIDI | PT37A   |                                         |
+| G13/1    | s0_gpio[6]            | LOCATED    | LVCMOS33_BIDI | PT51B   | MCSNO/MSDO                              |
+| G14/2    | s1_uart_txd_o         | LOCATED    | LVCMOS33_OUT  | PR11A   | SD14/S2_IN                              |
+| G15/2    |     unused, PULL:DOWN |            |               | PR7B    | SD2/SCL/USER_SCL/S3_IN                  |
+| G16/2    | Reserved: sysCONFIG   |            |               | PR8A    | TCK/SCLK/PMU_EXT_CLK                    |
+| G17/2    |     unused, PULL:DOWN |            |               | PR8B    | PMU_WAKEUPN/SD11/S4_OUT                 |
+| G18/2    |     unused, PULL:DOWN |            |               | PR9A    | SD9/S0_IN                               |
+| G19/2    |     unused, PULL:DOWN |            |               | PR9B    | SD8/S0_OUT                              |
+| G20/2    |     unused, PULL:DOWN |            |               | PR10B   | SD13/S1_OUT                             |
+| H1/9     |     unused, PULL:DOWN |            |               | PL11B   | EIO                                     |
+| H2/9     |     unused, PULL:DOWN |            |               | PL11A   | EIO                                     |
+| H5/9     |     unused, PULL:DOWN |            |               | PL10B   | EIO                                     |
+| H6/9     |     unused, PULL:DOWN |            |               | PL10A   | EIO                                     |
+| H7/9     |     unused, PULL:DOWN |            |               | PL9A    | EIO                                     |
+| H8/0     |     unused, PULL:DOWN |            |               | PT29A   |                                         |
+| H9/0     |     unused, PULL:DOWN |            |               | PT29B   |                                         |
+| H11/1    | s0_gpio[5]            | LOCATED    | LVCMOS33_BIDI | PT35B   |                                         |
+| H12/1    | s0_gpio[4]            | LOCATED    | LVCMOS33_BIDI | PT37B   |                                         |
+| H13/2    |     unused, PULL:DOWN |            |               | PR14A   | EIO                                     |
+| H14/2    | s1_uart_rxd_i         | LOCATED    | LVCMOS33_IN   | PR11B   | SD15/S2_OUT                             |
+| H15/2    |     unused, PULL:DOWN |            |               | PR12A   | EIO                                     |
+| H16/2    |     unused, PULL:DOWN |            |               | PR12B   | EIO                                     |
+| H19/2    |     unused, PULL:DOWN |            |               | PR13A   | EIO                                     |
+| H20/2    |     unused, PULL:DOWN |            |               | PR13B   | EIO                                     |
+| J1/9     |     unused, PULL:DOWN |            |               | PL15B   | EIO                                     |
+| J2/9     |     unused, PULL:DOWN |            |               | PL15A   | PCLKT9_0/EIO                            |
+| J3/9     |     unused, PULL:DOWN |            |               | PL14B   | EIO                                     |
+| J4/9     |     unused, PULL:DOWN |            |               | PL14A   | EIO                                     |
+| J5/9     |     unused, PULL:DOWN |            |               | PL13B   | EIO                                     |
+| J6/9     |     unused, PULL:DOWN |            |               | PL13A   | EIO                                     |
+| J7/9     |     unused, PULL:DOWN |            |               | PL9B    | EIO                                     |
+| J8/9     |     unused, PULL:DOWN |            |               | PL12A   | EIO                                     |
+| J12/2    |     unused, PULL:DOWN |            |               | PR14B   | EIO                                     |
+| J13/2    |     unused, PULL:DOWN |            |               | PR15A   | EIO                                     |
+| J14/2    |     unused, PULL:DOWN |            |               | PR15B   | EIO                                     |
+| J15/2    |     unused, PULL:DOWN |            |               | PR16A   | EIO                                     |
+| J16/2    |     unused, PULL:DOWN |            |               | PR16B   | EIO                                     |
+| J17/2    |     unused, PULL:DOWN |            |               | PR17A   | EIO                                     |
+| J18/2    |     unused, PULL:DOWN |            |               | PR17B   | EIO                                     |
+| J19/3    |     unused, PULL:DOWN |            |               | PR18A   | EIO                                     |
+| J20/3    |     unused, PULL:DOWN |            |               | PR18B   | EIO                                     |
+| K1/8     |     unused, PULL:DOWN |            |               | PL20A   | EIO                                     |
+| K2/8     |     unused, PULL:DOWN |            |               | PL18B   | EIO                                     |
+| K3/8     |     unused, PULL:DOWN |            |               | PL18A   | EIO                                     |
+| K4/9     |     unused, PULL:DOWN |            |               | PL17B   | EIO                                     |
+| K5/9     |     unused, PULL:DOWN |            |               | PL17A   | PCLKT9_2/EIO                            |
+| K6/9     |     unused, PULL:DOWN |            |               | PL16B   | EIO                                     |
+| K7/9     |     unused, PULL:DOWN |            |               | PL16A   | PCLKT9_1/EIO                            |
+| K8/9     |     unused, PULL:DOWN |            |               | PL12B   | EIO                                     |
+| K12/3    |     unused, PULL:DOWN |            |               | PR30A   | EIO                                     |
+| K13/3    |     unused, PULL:DOWN |            |               | PR20A   | EIO                                     |
+| K14/3    |     unused, PULL:DOWN |            |               | PR20B   | EIO                                     |
+| K15/3    |     unused, PULL:DOWN |            |               | PR21A   | EIO                                     |
+| K16/3    |     unused, PULL:DOWN |            |               | PR21B   | EIO                                     |
+| K17/3    |     unused, PULL:DOWN |            |               | PR22A   | EIO                                     |
+| K18/3    |     unused, PULL:DOWN |            |               | PR22B   | EIO                                     |
+| K19/3    |     unused, PULL:DOWN |            |               | PR23A   | PCLKT3_0/EIO                            |
+| K20/3    |     unused, PULL:DOWN |            |               | PR23B   | EIO                                     |
+| L1/8     |     unused, PULL:DOWN |            |               | PL20B   | EIO                                     |
+| L2/8     |     unused, PULL:DOWN |            |               | PL21A   | EIO                                     |
+| L3/8     |     unused, PULL:DOWN |            |               | PL21B   | EIO                                     |
+| L4/8     |     unused, PULL:DOWN |            |               | PL22A   | EIO                                     |
+| L5/8     |     unused, PULL:DOWN |            |               | PL22B   | EIO                                     |
+| L6/8     |     unused, PULL:DOWN |            |               | PL23A   | PCLKT8_0/EIO                            |
+| L7/8     |     unused, PULL:DOWN |            |               | PL23B   | EIO                                     |
+| L8/8     |     unused, PULL:DOWN |            |               | PL26A   | EIO                                     |
+| L12/3    |     unused, PULL:DOWN |            |               | PR30B   | EIO                                     |
+| L13/3    |     unused, PULL:DOWN |            |               | PR26B   | EIO                                     |
+| L14/3    |     unused, PULL:DOWN |            |               | PR26A   | EIO                                     |
+| L15/3    |     unused, PULL:DOWN |            |               | PR25B   | EIO                                     |
+| L16/3    |     unused, PULL:DOWN |            |               | PR25A   | EIO                                     |
+| L19/3    |     unused, PULL:DOWN |            |               | PR24B   | EIO                                     |
+| L20/3    |     unused, PULL:DOWN |            |               | PR24A   | EIO                                     |
+| M1/8     |     unused, PULL:DOWN |            |               | PL24A   | EIO                                     |
+| M2/8     |     unused, PULL:DOWN |            |               | PL24B   | EIO                                     |
+| M5/8     |     unused, PULL:DOWN |            |               | PL25A   | EIO                                     |
+| M6/8     |     unused, PULL:DOWN |            |               | PL25B   | EIO                                     |
+| M7/8     |     unused, PULL:DOWN |            |               | PL32A   | EIO                                     |
+| M8/8     |     unused, PULL:DOWN |            |               | PL26B   | EIO                                     |
+| M11/3    |     unused, PULL:DOWN |            |               | PR34B   | EIO                                     |
+| M12/3    |     unused, PULL:DOWN |            |               | PR34A   | EIO                                     |
+| M13/3    |     unused, PULL:DOWN |            |               | PR33B   | EIO                                     |
+| M14/3    |     unused, PULL:DOWN |            |               | PR33A   | EIO                                     |
+| M17/3    |     unused, PULL:DOWN |            |               | PR32B   | EIO                                     |
+| M18/3    |     unused, PULL:DOWN |            |               | PR32A   | EIO                                     |
+| M19/3    |     unused, PULL:DOWN |            |               | PR31B   | EIO                                     |
+| M20/3    |     unused, PULL:DOWN |            |               | PR31A   | EIO                                     |
+| N1/8     |     unused, PULL:DOWN |            |               | PL30A   | EIO                                     |
+| N2/8     |     unused, PULL:DOWN |            |               | PL30B   | EIO                                     |
+| N3/8     |     unused, PULL:DOWN |            |               | PL31A   | EIO                                     |
+| N4/8     |     unused, PULL:DOWN |            |               | PL31B   | EIO                                     |
+| N7/8     |     unused, PULL:DOWN |            |               | PL32B   | EIO                                     |
+| N8/6     |     unused, PULL:DOWN |            |               | PB2A    | VREF6_1/BDQ6                            |
+| N9/6     |     unused, PULL:DOWN |            |               | PB10A   | CDR_RXP1/ADC_CP3/BDQ6                   |
+| N10/6    |     unused, PULL:DOWN |            |               | PB14A   | CDR0_TESTP/ADC_CP5/BDQ18                |
+| N11/6    |     unused, PULL:DOWN |            |               | PB36A   | BDQ18                                   |
+| N12/5    |     unused, PULL:DOWN |            |               | PB48B   | ADC_CN14/BDQ42                          |
+| N13/5    |     unused, PULL:DOWN |            |               | PB48A   | ADC_CP14/BDQ42                          |
+| N14/3    |     unused, PULL:DOWN |            |               | PR37B   | EIO                                     |
+| N15/3    |     unused, PULL:DOWN |            |               | PR37A   | PCLKT3_1/EIO                            |
+| N16/3    |     unused, PULL:DOWN |            |               | PR36B   | EIO                                     |
+| N17/3    |     unused, PULL:DOWN |            |               | PR36A   | EIO                                     |
+| N18/3    |     unused, PULL:DOWN |            |               | PR35B   | EIO                                     |
+| N19/3    |     unused, PULL:DOWN |            |               | PR35A   | EIO                                     |
+| N20/4    |     unused, PULL:DOWN |            |               | PR38A   | EIO                                     |
+| P1/8     |     unused, PULL:DOWN |            |               | PL33A   | EIO                                     |
+| P2/8     |     unused, PULL:DOWN |            |               | PL33B   | EIO                                     |
+| P3/8     |     unused, PULL:DOWN |            |               | PL34A   | EIO                                     |
+| P4/8     |     unused, PULL:DOWN |            |               | PL35A   | EIO                                     |
+| P5/8     |     unused, PULL:DOWN |            |               | PL35B   | EIO                                     |
+| P6/8     |     unused, PULL:DOWN |            |               | PL36A   | EIO                                     |
+| P7/8     | s0_gpio[3]            | LOCATED    | LVCMOS33_BIDI | PL36B   | EIO                                     |
+| P8/6     |     unused, PULL:DOWN |            |               | PB2B    | BDQ6                                    |
+| P9/6     |     unused, PULL:DOWN |            |               | PB10B   | CDR_RXN1/ADC_CN3/BDQ6                   |
+| P10/6    |     unused, PULL:DOWN |            |               | PB14B   | CDR0_TESTN/ADC_CN5/BDQ18                |
+| P11/6    |     unused, PULL:DOWN |            |               | PB36B   | VREF6_2/BDQ18                           |
+| P13/5    |     unused, PULL:DOWN |            |               | PB52A   | ADC_CP11/BDQ54                          |
+| P14/4    |     unused, PULL:DOWN |            |               | PR41B   | EIO                                     |
+| P15/4    |     unused, PULL:DOWN |            |               | PR41A   | EIO                                     |
+| P16/4    |     unused, PULL:DOWN |            |               | PR40B   | EIO                                     |
+| P17/4    |     unused, PULL:DOWN |            |               | PR40A   | EIO                                     |
+| P18/4    |     unused, PULL:DOWN |            |               | PR39B   | EIO                                     |
+| P19/4    |     unused, PULL:DOWN |            |               | PR39A   | EIO                                     |
+| P20/4    |     unused, PULL:DOWN |            |               | PR38B   | EIO                                     |
+| PT45A/1  |     unused, PULL:DOWN |            |               | PT45A   | MCLK                                    |
+| PT45B/1  |     unused, PULL:DOWN |            |               | PT45B   | MCSN                                    |
+| PT46A/1  |     unused, PULL:DOWN |            |               | PT46A   | MOSI/MD0                                |
+| PT46B/1  |     unused, PULL:DOWN |            |               | PT46B   | MISO/MD1                                |
+| PT48A/1  |     unused, PULL:DOWN |            |               | PT48A   | MD2                                     |
+| PT48B/1  |     unused, PULL:DOWN |            |               | PT48B   | MD3                                     |
+| R1/8     | s0_gpio[2]            | LOCATED    | LVCMOS33_BIDI | PL37A   | PCLKT8_1/EIO                            |
+| R2/8     | s0_gpio[1]            | LOCATED    | LVCMOS33_BIDI | PL37B   | EIO                                     |
+| R3/8     | s0_gpio[0]            | LOCATED    | LVCMOS33_BIDI | PL34B   | EIO                                     |
+| R4/7     |     unused, PULL:DOWN |            |               | PL38A   | EIO                                     |
+| R5/7     |     unused, PULL:DOWN |            |               | PL38B   | EIO                                     |
+| R6/7     |     unused, PULL:DOWN |            |               | PL39A   | EIO                                     |
+| R7/7     |     unused, PULL:DOWN |            |               | PL39B   | EIO                                     |
+| R10/6    |     unused, PULL:DOWN |            |               | PB16A   | CDR1_TESTP/ADC_CP7/BDQ18                |
+| R11/5    |     unused, PULL:DOWN |            |               | PB40B   | COMP1IN/PCLKC5_0/BDQ42                  |
+| R13/5    |     unused, PULL:DOWN |            |               | PB52B   | ADC_CN11/BDQ54                          |
+| R14/5    |     unused, PULL:DOWN |            |               | PB58B   | PCLKC5_3/LRC_GPLL0T_MFGOUT2/BDQ54       |
+| R15/4    |     unused, PULL:DOWN |            |               | PR43B   | EIO                                     |
+| R16/4    |     unused, PULL:DOWN |            |               | PR43A   | EIO                                     |
+| R19/4    |     unused, PULL:DOWN |            |               | PR42B   | EIO                                     |
+| R20/4    |     unused, PULL:DOWN |            |               | PR42A   | EIO                                     |
+| T1/7     |     unused, PULL:DOWN |            |               | PL40A   | EIO                                     |
+| T2/7     |     unused, PULL:DOWN |            |               | PL40B   | EIO                                     |
+| T3/7     |     unused, PULL:DOWN |            |               | PL41A   | EIO                                     |
+| T4/7     |     unused, PULL:DOWN |            |               | PL41B   | EIO                                     |
+| T5/7     |     unused, PULL:DOWN |            |               | PL42A   | EIO                                     |
+| T6/7     |     unused, PULL:DOWN |            |               | PL42B   | EIO                                     |
+| T7/7     |     unused, PULL:DOWN |            |               | PL45A   | PCLKT7_0/EIO                            |
+| T8/6     |     unused, PULL:DOWN |            |               | PB4A    | BDQ6                                    |
+| T10/6    |     unused, PULL:DOWN |            |               | PB16B   | CDR1_TESTN/ADC_CN7/BDQ18                |
+| T11/5    |     unused, PULL:DOWN |            |               | PB40A   | COMP1IP/PCLKT5_0/BDQ42                  |
+| T13/5    |     unused, PULL:DOWN |            |               | PB50B   | COMP3IN/BDQ54                           |
+| T14/5    |     unused, PULL:DOWN |            |               | PB58A   | PCLKT5_3/LRC_GPLL0T_MFGOUT1/BDQ54       |
+| T15/4    |     unused, PULL:DOWN |            |               | PR46B   | EIO                                     |
+| T16/4    |     unused, PULL:DOWN |            |               | PR46A   | PCLKT4_1/EIO                            |
+| T17/4    |     unused, PULL:DOWN |            |               | PR45B   | EIO                                     |
+| T18/4    |     unused, PULL:DOWN |            |               | PR45A   | PCLKT4_0/EIO                            |
+| T19/4    |     unused, PULL:DOWN |            |               | PR44B   | EIO                                     |
+| T20/4    |     unused, PULL:DOWN |            |               | PR44A   | EIO                                     |
+| U1/7     |     unused, PULL:DOWN |            |               | PL43A   | EIO                                     |
+| U2/7     |     unused, PULL:DOWN |            |               | PL43B   | EIO                                     |
+| U5/7     |     unused, PULL:DOWN |            |               | PL44A   | EIO                                     |
+| U6/7     |     unused, PULL:DOWN |            |               | PL44B   | EIO                                     |
+| U7/7     |     unused, PULL:DOWN |            |               | PL45B   | EIO                                     |
+| U8/6     |     unused, PULL:DOWN |            |               | PB4B    | BDQ6                                    |
+| U9/6     |     unused, PULL:DOWN |            |               | PB12A   | PCLKT6_2/ADC_CP2/COMP3P/BDQ6            |
+| U10/6    |     unused, PULL:DOWN |            |               | PB32A   | ADC_CP9/BDQ18                           |
+| U11/5    |     unused, PULL:DOWN |            |               | PB38B   | ADC_CN4/BDQ42                           |
+| U12/5    |     unused, PULL:DOWN |            |               | PB44B   | COMP2IN/BDQ42                           |
+| U13/5    |     unused, PULL:DOWN |            |               | PB50A   | COMP3IP/BDQ54                           |
+| U14/5    |     unused, PULL:DOWN |            |               | PB56B   | ADC_CN15/BDQ54                          |
+| U15/4    |     unused, PULL:DOWN |            |               | PR48B   | EIO                                     |
+| U16/4    |     unused, PULL:DOWN |            |               | PR48A   | EIO                                     |
+| U19/4    |     unused, PULL:DOWN |            |               | PR47B   | EIO                                     |
+| U20/4    |     unused, PULL:DOWN |            |               | PR47A   | EIO                                     |
+| V1/7     |     unused, PULL:DOWN |            |               | PL46A   | PCLKT7_1/EIO                            |
+| V2/7     |     unused, PULL:DOWN |            |               | PL46B   | EIO                                     |
+| V3/7     |     unused, PULL:DOWN |            |               | PL47A   | EIO                                     |
+| V4/7     |     unused, PULL:DOWN |            |               | PL47B   | EIO                                     |
+| V5/7     |     unused, PULL:DOWN |            |               | PL48A   | EIO                                     |
+| V6/7     |     unused, PULL:DOWN |            |               | PL48B   | EIO                                     |
+| V9/6     |     unused, PULL:DOWN |            |               | PB12B   | PCLKC6_2/ADC_CN2/COMP3N/BDQ6            |
+| V10/6    |     unused, PULL:DOWN |            |               | PB32B   | ADC_CN9/BDQ18                           |
+| V11/5    |     unused, PULL:DOWN |            |               | PB38A   | VREF5_1/ADC_CP4/BDQ42                   |
+| V12/5    |     unused, PULL:DOWN |            |               | PB44A   | COMP2IP/BDQ42                           |
+| V13/5    |     unused, PULL:DOWN |            |               | PB56A   | ADC_CP15/BDQ54                          |
+| V19/4    |     unused, PULL:DOWN |            |               | PR49B   | EIO                                     |
+| V20/4    |     unused, PULL:DOWN |            |               | PR49A   | EIO                                     |
+| W1/7     |     unused, PULL:DOWN |            |               | PL49A   | EIO                                     |
+| W2/7     |     unused, PULL:DOWN |            |               | PL49B   | EIO                                     |
+| W7/6     |     unused, PULL:DOWN |            |               | PB6A    | PCLKT6_0/CDR_RXP0/ADC_CP0/COMP1P/BDQS6  |
+| W8/6     |     unused, PULL:DOWN |            |               | PB8A    | PCLKT6_1/ADC_CP1/COMP2P/BDQ6            |
+| W9/6     |     unused, PULL:DOWN |            |               | PB18A   | ADC_CP6/BDQS18                          |
+| W10/6    |     unused, PULL:DOWN |            |               | PB34A   | PCLKT6_3/ADC_CP10/BDQ18                 |
+| W11/5    |     unused, PULL:DOWN |            |               | PB42B   | PCLKC5_1/ADC_CN8/BDQSN42                |
+| W12/5    |     unused, PULL:DOWN |            |               | PB46B   | PCLKC5_2/ADC_CN13/BDQ42                 |
+| W13/5    |     unused, PULL:DOWN |            |               | PB54B   | ADC_CN12/BDQSN54                        |
+| W14/5    |     unused, PULL:DOWN |            |               | PB60B   | LRC_GPLL0C_IN/VREF5_2/ATB_SENSE/BDQ54   |
+| Y7/6     |     unused, PULL:DOWN |            |               | PB6B    | PCLKC6_0/CDR_RXN0/ADC_CN0/COMP1N/BDQSN6 |
+| Y8/6     |     unused, PULL:DOWN |            |               | PB8B    | PCLKC6_1/ADC_CN1/COMP2N/BDQ6            |
+| Y9/6     |     unused, PULL:DOWN |            |               | PB18B   | ADC_CN6/BDQSN18                         |
+| Y10/6    |     unused, PULL:DOWN |            |               | PB34B   | PCLKC6_3/ADC_CN10/BDQ18                 |
+| Y11/5    |     unused, PULL:DOWN |            |               | PB42A   | PCLKT5_1/ADC_CP8/BDQS42                 |
+| Y12/5    |     unused, PULL:DOWN |            |               | PB46A   | PCLKT5_2/ADC_CP13/BDQ42                 |
+| Y13/5    |     unused, PULL:DOWN |            |               | PB54A   | ADC_CP12/BDQS54                         |
+| Y14/5    |     unused, PULL:DOWN |            |               | PB60A   | LRC_GPLL0T_IN/ATB_FORCE/BDQ54           |
+| Y16/70   |                       |            |               | ADC_DP0 |                                         |
+| Y17/70   |                       |            |               | ADC_DN0 |                                         |
+| Y18/70   |                       |            |               | ADC_DP1 |                                         |
+| Y19/70   |                       |            |               | ADC_DN1 |                                         |
++----------+-----------------------+------------+---------------+---------+-----------------------------------------+
+
+sysCONFIG Pins:
++----------+----------------------+----------+-------------+
+| Pad Name | sysCONFIG Pin Name   | Pin/Bank | Buffer Type |
++----------+----------------------+----------+-------------+
+| PT43A    | INITN                | E13/1    |             |
+| PT43B    | PROGRAMN             | F12/1    |             |
+| PT51A    | DONE                 | F13/1    |             |
+| PR8A     | TCK/SCLK/PMU_EXT_CLK | G16/2    |             |
+| PR6B     | TDO/SSO/SD1/S3_OUT   | E20/2    |             |
+| PR5B     | TDI/SSI/SD0/S5_OUT   | E18/2    |             |
+| PR4B     | TMS/SCSN/S5_IN       | F16/2    |             |
++----------+----------------------+----------+-------------+
+
+
+Locate Constraints for each Pin: 
+
+ldc_set_location -site {F20} [ get_ports {rstn_i} ]
+ldc_set_location -site {R3} [ get_ports {s0_gpio[0]} ]
+ldc_set_location -site {E15} [ get_ports {s0_gpio[10]} ]
+ldc_set_location -site {F11} [ get_ports {s0_gpio[11]} ]
+ldc_set_location -site {A15} [ get_ports {s0_gpio[12]} ]
+ldc_set_location -site {A16} [ get_ports {s0_gpio[13]} ]
+ldc_set_location -site {A17} [ get_ports {s0_gpio[14]} ]
+ldc_set_location -site {A18} [ get_ports {s0_gpio[15]} ]
+ldc_set_location -site {R2} [ get_ports {s0_gpio[1]} ]
+ldc_set_location -site {R1} [ get_ports {s0_gpio[2]} ]
+ldc_set_location -site {P7} [ get_ports {s0_gpio[3]} ]
+ldc_set_location -site {H12} [ get_ports {s0_gpio[4]} ]
+ldc_set_location -site {H11} [ get_ports {s0_gpio[5]} ]
+ldc_set_location -site {G13} [ get_ports {s0_gpio[6]} ]
+ldc_set_location -site {G12} [ get_ports {s0_gpio[7]} ]
+ldc_set_location -site {F14} [ get_ports {s0_gpio[8]} ]
+ldc_set_location -site {G11} [ get_ports {s0_gpio[9]} ]
+ldc_set_location -site {H14} [ get_ports {s1_uart_rxd_i} ]
+ldc_set_location -site {G14} [ get_ports {s1_uart_txd_o} ]
+
+#PLL
+ldc_set_location -site {PLL_ULC} [ get_cells {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst} ]
+# ldc_set_location -site {PLL_ULC} [ get_cells {pll0_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst} ]
+
+
+
+
+
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Mon Nov 20 14:15:31 2023
+

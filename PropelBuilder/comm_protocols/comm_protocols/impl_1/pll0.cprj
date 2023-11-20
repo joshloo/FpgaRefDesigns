@@ -1,0 +1,7 @@
+-ver "C:/lscc/radiant/2023.1/ip/pmi/pmi_lfmxo5.v"
+-lib pmi -vhd "C:/lscc/radiant/2023.1/ip/pmi/pmi_lfmxo5.vhd"
+-ver "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/comm_protocols/lib/latticesemi.com/module/pll0/1.7.0/rtl/pll0.v"
+-sdc "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/comm_protocols/lib/latticesemi.com/module/pll0/1.7.0/constraints/pll0.ldc"
+-path "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols" "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols/comm_protocols/lib/latticesemi.com/module/pll0/1.7.0" "C:/code/FpgaRefDesigns/PropelBuilder/comm_protocols/comm_protocols"
+-top pll0
+-a "LFMXO5"

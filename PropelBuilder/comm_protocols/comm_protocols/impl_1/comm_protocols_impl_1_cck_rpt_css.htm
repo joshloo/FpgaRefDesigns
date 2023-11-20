@@ -1,0 +1,124 @@
+<html><body><samp><pre>
+<!@TC:1700460713>
+
+Copyright (C) 1994-2023 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: U-2023.03LR-1
+Install: C:\lscc\radiant\2023.1\synpbase
+OS: Windows 10 or later
+Hostname: LPGL109105
+
+Implementation : impl_1
+
+# Written on Mon Nov 20 14:11:53 2023
+
+##### DESIGN INFO #######################################################
+
+Top View:                "comm_protocols"
+Constraint File(s):      "C:\code\FpgaRefDesigns\PropelBuilder\comm_protocols\comm_protocols\impl_1\comm_protocols_impl_1_cpe.ldc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 2 issues in 2 out of 3 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+<a name=clockRelationships56></a>Clock Relationships</a>
+*******************
+
+Starting                                                                                       Ending                                                                                         |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                                         pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                                         cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     No paths         |     5.000            |     No paths                         
+pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          System                                                                                         |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     Diff grp         |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               System                                                                                         |     No paths         |     No paths         |     No paths         |     5.000                            
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               pll0_ipgen_lscc_pll_Z20_layer0|clkop_o_inferred_clock                                          |     Diff grp         |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     5.000            |     No paths         |     2.500            |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     System                                                                                         |     5.000            |     No paths         |     No paths         |     No paths                         
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bbICH_inferred_clock               |     No paths         |     No paths         |     No paths         |     Diff grp                         
+cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     cpu0_ipgen_vex_jtag_bridge_LIFCL_14s_0s_0b1_0b0_0b0_0x04000|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     5.000            |     2.500            |     2.500                            
+=========================================================================================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+<a name=UnconstrainedStartEndPointsCCK57></a>Unconstrained Start/End Points</a>
+******************************
+
+p:rstn_i
+p:s0_gpio[0] (bidir end point)
+p:s0_gpio[0] (bidir start point)
+p:s0_gpio[1] (bidir end point)
+p:s0_gpio[1] (bidir start point)
+p:s0_gpio[2] (bidir end point)
+p:s0_gpio[2] (bidir start point)
+p:s0_gpio[3] (bidir end point)
+p:s0_gpio[3] (bidir start point)
+p:s0_gpio[4] (bidir end point)
+p:s0_gpio[4] (bidir start point)
+p:s0_gpio[5] (bidir end point)
+p:s0_gpio[5] (bidir start point)
+p:s0_gpio[6] (bidir end point)
+p:s0_gpio[6] (bidir start point)
+p:s0_gpio[7] (bidir end point)
+p:s0_gpio[7] (bidir start point)
+p:s0_gpio[8] (bidir end point)
+p:s0_gpio[8] (bidir start point)
+p:s0_gpio[9] (bidir end point)
+p:s0_gpio[9] (bidir start point)
+p:s0_gpio[10] (bidir end point)
+p:s0_gpio[10] (bidir start point)
+p:s0_gpio[11] (bidir end point)
+p:s0_gpio[11] (bidir start point)
+p:s0_gpio[12] (bidir end point)
+p:s0_gpio[12] (bidir start point)
+p:s0_gpio[13] (bidir end point)
+p:s0_gpio[13] (bidir start point)
+p:s0_gpio[14] (bidir end point)
+p:s0_gpio[14] (bidir start point)
+p:s0_gpio[15] (bidir end point)
+p:s0_gpio[15] (bidir start point)
+p:s1_uart_rxd_i
+p:s1_uart_txd_o
+
+
+<a name=InapplicableconstraintsCCK58></a>Inapplicable constraints</a>
+************************
+
+(none)
+
+
+<a name=ApplicableConstraintsWithIssuesCCK59></a>Applicable constraints with issues</a>
+**********************************
+
+create_clock -name osc0_inst_hf_clk_out_o -period 20 [get_pins osc0_inst/hf_clk_out_o]
+	@W:Z241:"c:/code/fpgarefdesigns/propelbuilder/comm_protocols/comm_protocols/impl_1/comm_protocols_impl_1_cpe.ldc":3:0:3:0|Source for clock osc0_inst_hf_clk_out_o should be moved to net osc0_inst.lscc_osc_inst.hf_clk_out_o connected to driving cell pin osc0_inst.lscc_osc_inst.OSCA\.u_OSC.HFCLKOUT
+create_clock -name osc0_inst_lf_clk_out_o -period 31250 [get_pins osc0_inst/lf_clk_out_o]
+	@W:Z241:"c:/code/fpgarefdesigns/propelbuilder/comm_protocols/comm_protocols/impl_1/comm_protocols_impl_1_cpe.ldc":5:0:5:0|Source for clock osc0_inst_lf_clk_out_o should be moved to net osc0_inst.lscc_osc_inst.lf_clk_out_o connected to driving cell pin osc0_inst.lscc_osc_inst.OSCA\.u_OSC.LFCLKOUT
+
+<a name=ConstraintsWithMatchingWildcardExpressionsCCK60></a>Constraints with matching wildcard expressions</a>
+**********************************************
+
+(none)
+
+
+<a name=LibraryReportCCK61></a>Library Report</a>
+**************
+
+
+# End of Constraint Checker Report
+
+</pre></samp></body></html>
+
